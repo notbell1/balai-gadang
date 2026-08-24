@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FCA228;
+  --color-brand-yellow-orange: #FCB739;
+  --color-brand-gold: #FCCB5D;
+  --color-brand-purple: #7E549E;
+  --color-brand-purple-medium: #8F66AC;
+  --color-brand-purple-dark: #633B83;
+  --color-brand-purple-light: #A582BF;
+}
+
+:root {
+  --brand-orange: #FCA228;
+  --brand-yellow-orange: #FCB739;
+  --brand-gold: #FCCB5D;
+  --brand-purple: #7E549E;
+  --brand-purple-medium: #8F66AC;
+  --brand-purple-dark: #633B83;
+  --brand-purple-light: #A582BF;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Leaflet Custom Marker Fixes & Polish */
+.custom-leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Custom Popup Styles */
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  overflow: hidden !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-container {
+  font-family: inherit !important;
+}
+
+/* Custom animations for subtle background movements */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translateY(-24px) translateX(18px) rotate(2deg) scale(1.05);
+  }
+  66% {
+    transform: translateY(16px) translateX(-14px) rotate(-2deg) scale(0.96);
+  }
+}
+
+@keyframes float-reverse-slow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translateY(22px) translateX(-18px) rotate(-3deg) scale(0.95);
+  }
+  66% {
+    transform: translateY(-20px) translateX(15px) rotate(2deg) scale(1.04);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.03);
+  }
+}
+
+@keyframes drift-particle {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-35px) translateX(20px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes rotate-very-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 22s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse-slow 26s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 14s ease-in-out infinite;
+}
+
+.animate-drift-1 {
+  animation: drift-particle 18s ease-in-out infinite;
+}
+
+.animate-drift-2 {
+  animation: drift-particle 24s ease-in-out infinite 3s;
+}
+
+.animate-drift-3 {
+  animation: drift-particle 20s ease-in-out infinite 6s;
+}
+
+.animate-rotate-slow {
+  animation: rotate-very-slow 60s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-float-gentle,
+  .animate-drift-1,
+  .animate-drift-2,
+  .animate-drift-3,
+  .animate-rotate-slow {
+    animation: none !important;
+  }
+}

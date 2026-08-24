@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" fill="none" className="w-full h-full">
+  <defs>
+    <!-- Orange / Gold Ribbon Gradient -->
+    <linearGradient id="uisbOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB326"/>
+      <stop offset="45%" stop-color="#FCA228"/>
+      <stop offset="100%" stop-color="#E8830C"/>
+    </linearGradient>
+
+    <!-- Purple Ribbon Gradient -->
+    <linearGradient id="uisbPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8F66AC"/>
+      <stop offset="50%" stop-color="#7E549E"/>
+      <stop offset="100%" stop-color="#5B3179"/>
+    </linearGradient>
+
+    <!-- Ribbon Intersect Shadow Gradient -->
+    <linearGradient id="uisbShadowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A2066" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7E549E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left/Orange Loop of the U -->
+  <path d="M48 24 C34 24 22 36 22 52 L22 120 C22 165 58 190 98 190 C114 190 126 182 136 172 C116 168 100 152 92 136 C78 144 60 142 50 130 C42 120 42 108 42 98 L42 52 C42 46 44 42 48 42 C52 42 56 46 56 52 L56 94 C56 122 84 146 112 146 C128 146 142 138 150 124 L150 52 C150 36 138 24 122 24 C106 24 94 36 94 52 L94 92 C94 102 86 110 76 110 C66 110 58 102 58 92 L58 52 C58 36 68 24 48 24 Z" fill="url(#uisbOrangeGrad)" />
+
+  <!-- Smooth 3D Ribbon U Mark -->
+  <g transform="translate(10, 0)">
+    <!-- Orange outer stroke path -->
+    <path d="M42 28 C26 28 14 42 14 60 L14 120 C14 168 54 192 95 192 C114 192 125 186 134 176 C122 170 108 158 98 144 C84 148 68 142 58 130 C48 118 48 104 48 90 L48 60 C48 50 54 44 62 44 C70 44 76 50 76 60 L76 92 C76 106 88 118 102 118 C116 118 128 106 128 92 L128 60 C128 42 114 28 96 28 C78 28 64 42 64 60 L64 90" fill="none" stroke="url(#uisbOrangeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Purple inner overlapping loop -->
+    <path d="M128 60 L128 120 C128 152 104 174 76 174 C58 174 44 164 34 150" fill="none" stroke="url(#uisbPurpleGrad)" stroke-width="24" stroke-linecap="round" />
+    <path d="M128 60 C128 42 114 28 96 28 C78 28 64 42 64 60 L64 90" fill="none" stroke="url(#uisbPurpleGrad)" stroke-width="24" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography: Universitas Islam Sumatera Barat -->
+  <g transform="translate(180, 0)">
+    <!-- Universitas -->
+    <text x="0" y="58" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="44" font-weight="700" fill="#633B83" letter-spacing="-0.5px">
+      Universitas
+    </text>
+
+    <!-- Islam -->
+    <text x="0" y="112" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="48" font-weight="800" fill="#633B83" letter-spacing="-0.5px">
+      Islam
+    </text>
+
+    <!-- Sumatera Barat -->
+    <text x="0" y="166" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="46" font-weight="800" fill="#FCA228" letter-spacing="-0.5px">
+      Sumatera Barat
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "GAL001",
+    "title": "Panorama Alam Kawasan Perbukitan & Batang Air Dingin",
+    "category": "wilayah",
+    "categoryLabel": "Bentang Alam",
+    "description": "Pemandangan asri pegunungan hijau dan aliran sungai Batang Air Dingin yang menjadi urat nadi kehidupan dan irigasi pertanian di Balai Gadang.",
+    "image": "/images/gallery/panorama-alam.jpg",
+    "date": "2026-07-15",
+    "location": "Sungai Lareh, RW 03"
+  },
+  {
+    "id": "GAL002",
+    "title": "Sentra Pembibitan Tanaman Hias Unggulan",
+    "category": "potensi",
+    "categoryLabel": "Potensi Wilayah",
+    "description": "Deretan kios pembibitan bunga dan tanaman hias tropis di sepanjang jalur Lubuk Minturun yang menjadi ikon agrowisata Sumatera Barat.",
+    "image": "/images/gallery/tanaman-hias-galeri.jpg",
+    "date": "2026-07-20",
+    "location": "Lubuk Minturun, RW 02"
+  },
+  {
+    "id": "GAL003",
+    "title": "Pelayanan Prima Administrasi di Kantor Lurah",
+    "category": "fasilitas",
+    "categoryLabel": "Fasilitas Publik",
+    "description": "Suasana ruang pelayanan terpadu satu pintu (PTSP) Kelurahan Balai Gadang yang nyaman, transparan, dan ramah masyarakat.",
+    "image": "/images/gallery/kantor-lurah-galeri.jpg",
+    "date": "2026-08-05",
+    "location": "Kantor Lurah, RW 01"
+  },
+  {
+    "id": "GAL004",
+    "title": "Pemandian Alam Jernih Lubuk Minturun",
+    "category": "potensi",
+    "categoryLabel": "Wisata Alam",
+    "description": "Kolam alami dengan air pegunungan yang jernih dan segar menjadi destinasi rekreasi favorit keluarga saat akhir pekan.",
+    "image": "/images/gallery/pemandian-alam-galeri.jpg",
+    "date": "2026-08-10",
+    "location": "Lubuk Minturun, RW 02"
+  },
+  {
+    "id": "GAL005",
+    "title": "Gotong Royong Kebersihan Lingkungan RW Serentak",
+    "category": "kegiatan",
+    "categoryLabel": "Kegiatan Warga",
+    "description": "Kebersamaan warga dan pemuda dalam aksi Jumat Bersih membersihkan saluran air dan fasilitas umum demi lingkungan sehat bebas banjir.",
+    "image": "/images/gallery/gotong-royong.jpg",
+    "date": "2026-08-12",
+    "location": "Balai Gadang, RW 04 & RW 07"
+  },
+  {
+    "id": "GAL006",
+    "title": "Latihan Seni Randai & Silek Generasi Muda",
+    "category": "kegiatan",
+    "categoryLabel": "Seni & Budaya",
+    "description": "Pelestarian seni tradisi Minangkabau oleh pemuda Karang Taruna dan sanggar seni lokal untuk memupuk karakter generasi penerus nagari.",
+    "image": "/images/gallery/randai-silek.jpg",
+    "date": "2026-08-14",
+    "location": "Surau Koto Tuo, RW 09"
+  },
+  {
+    "id": "GAL007",
+    "title": "Pemeriksaan Kesehatan Posyandu Balita & Lansia",
+    "category": "fasilitas",
+    "categoryLabel": "Layanan Kesehatan",
+    "description": "Kader Posyandu dan tenaga kesehatan Pustu memberikan layanan penimbangan berat badan, vitamin A, dan edukasi gizi seimbang.",
+    "image": "/images/gallery/posyandu-kegiatan.jpg",
+    "date": "2026-08-16",
+    "location": "Posyandu Teratai, RW 04"
+  },
+  {
+    "id": "GAL008",
+    "title": "Panen Durian Kunyit & Buah Tropis Perkebunan Rakyat",
+    "category": "potensi",
+    "categoryLabel": "Pertanian",
+    "description": "Hasil bumi unggulan buah durian varietas lokal Kunyit yang terkenal manis legit dan beraroma harum dari perbukitan Sungai Lareh.",
+    "image": "/images/gallery/panen-durian.jpg",
+    "date": "2026-08-18",
+    "location": "Perbukitan Sungai Lareh, RW 03"
+  }
+]

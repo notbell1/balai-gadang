@@ -1,0 +1,81 @@
+{
+  "general": {
+    "name": "Kelurahan Balai Gadang",
+    "district": "Kecamatan Koto Tangah",
+    "city": "Kota Padang",
+    "province": "Sumatera Barat",
+    "postalCode": "25586",
+    "areaSqKm": 38.45,
+    "totalPopulation": 16420,
+    "totalHouseholds": 4120,
+    "malePopulation": 8295,
+    "femalePopulation": 8125,
+    "densityPerSqKm": 427,
+    "elevationMeters": "0 - 1.600 mdpl",
+    "slogan": "Balai Gadang Madani, Asri, dan Berkelanjutan"
+  },
+  "boundaries": {
+    "north": "Kelurahan Lubuk Minturun & Batas Hutan Lindung Bukit Barisan",
+    "south": "Kelurahan Ikua Koto Dibalai & Batang Kabung Ganting",
+    "west": "Kelurahan Dadok Tunggul Hitam & Padang Sarai",
+    "east": "Kawasan Hutan Lindung Bukit Barisan / Kabupaten Solok"
+  },
+  "vision": "Mewujudkan pelayanan pemerintahan kelurahan yang efektif, transparan, dan berkualitas dalam rangka menciptakan masyarakat yang maju, aman, nyaman, dan sejahtera.",
+  "missions": [
+    "Meningkatkan kualitas pelayanan kepada masyarakat.",
+    "Meningkatkan transparansi dan keterbukaan informasi publik.",
+    "Meningkatkan partisipasi masyarakat dalam pembangunan kelurahan.",
+    "Mewujudkan lingkungan yang aman, nyaman, bersih, dan tertib.",
+    "Melestarikan nilai-nilai adat dan budaya masyarakat."
+  ],
+  "history": "Kelurahan Balai Gadang merupakan salah satu kelurahan terluas di Kecamatan Koto Tangah, Kota Padang. Memiliki kontur wilayah yang membentang dari dataran pemukiman hingga perbukitan asri kawasan Lubuk Minturun dan Sungai Lareh. Dikenal sejak masa lampau sebagai kawasan subur berair jernih dari aliran Batang Air Dingin dan Batang Kandis, Balai Gadang tumbuh menjadi sentra pembibitan tanaman hias nasional, pertanian pangan, dan destinasi wisata alam yang sejuk di utara Kota Padang.",
+  "leadership": {
+    "lurah": "Yufrizal Maas, S.H",
+    "sekretaris": "Zalmon, S.Hum",
+    "kasiPemerintahan": "Maida Yanti, S.H",
+    "kasiKesosPB": "Marjulis",
+    "kasiTrantibum": "Bambang Irawan, S.H",
+    "staff1": "Yelvia",
+    "staff2": "Yusemaldi"
+  },
+  "contact": {
+    "officeAddress": "Jl. Napak Nilas, Balai Gadang, Kec. Koto Tangah, Kota Padang, Sumatera Barat, 25586",
+    "phone": "0813-7691-4162",
+    "whatsapp": "0813-7691-4162",
+    "email": "balai_gadang@gmail.com",
+    "operatingHours": "Senin – Kamis: 07.30 – 16.00 WIB | Jumat: 07.30 – 16.30 WIB",
+    "googleMapsUrl": "https://maps.google.com/?q=-0.834521,100.362145"
+  },
+  "publicServices": [
+    {
+      "name": "Surat Pengantar KTP / KK",
+      "requirements": "Pengantar RT/RW, Fotokopi KK lama / Surat Nikah",
+      "processTime": "15 Menit (Gratis)"
+    },
+    {
+      "name": "Surat Keterangan Domisili",
+      "requirements": "Surat Pengantar RT/RW, Fotokopi KTP & KK pemohon",
+      "processTime": "10 Menit (Gratis)"
+    },
+    {
+      "name": "Surat Keterangan Usaha (SKU)",
+      "requirements": "Pengantar RT/RW, Foto Tempat Usaha, Fotokopi KTP & KK",
+      "processTime": "15 Menit (Gratis)"
+    },
+    {
+      "name": "Surat Keterangan Tidak Mampu (SKTM)",
+      "requirements": "Pengantar RT/RW, Bukti pendukung/KKS/BPJS, Fotokopi KTP & KK",
+      "processTime": "15 Menit (Gratis)"
+    },
+    {
+      "name": "Surat Keterangan Kematian / Kelahiran",
+      "requirements": "Surat Bidan/RS/RT/RW, Fotokopi KTP Saksi & Pelapor, KK",
+      "processTime": "15 Menit (Gratis)"
+    },
+    {
+      "name": "Rekomendasi Nikah (N1-N4)",
+      "requirements": "Pengantar RT/RW, Ijazah, Akta Kelahiran, Pasfoto 3x4 (2 lbr)",
+      "processTime": "20 Menit (Gratis)"
+    }
+  ]
+}

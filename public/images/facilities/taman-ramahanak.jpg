@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#16a34a" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad)"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    
+    <!-- Accent shape -->
+    <circle cx="700" cy="80" r="160" fill="rgba(255,255,255,0.04)" />
+    <circle cx="100" cy="420" r="140" fill="rgba(255,255,255,0.03)" />
+    
+    <!-- Central Icon/Symbol badge -->
+    <g transform="translate(400, 190)">
+      <circle cx="0" cy="0" r="56" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+      <text x="0" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle">🌳</text>
+    </g>
+    
+    <!-- Category pill -->
+    <g transform="translate(400, 290)">
+      <rect x="-90" y="-18" width="180" height="36" rx="18" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <text x="0" y="5" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="1">FASILITAS UMUM</text>
+    </g>
+    
+    <!-- Title text -->
+    <text x="400" y="360" font-family="Plus Jakarta Sans, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">Taman Ramah Anak Air Dingin</text>
+    <text x="400" y="395" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="normal" fill="rgba(255,255,255,0.8)" text-anchor="middle">Kelurahan Balai Gadang, Koto Tangah, Kota Padang</text>
+    
+    <!-- Watermark / Footer -->
+    <rect x="0" y="465" width="800" height="35" fill="rgba(0,0,0,0.3)"/>
+    <text x="24" y="488" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">Sistem Informasi &amp; Profil Wilayah Kelurahan Balai Gadang</text>
+    <text x="776" y="488" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">Dokumentasi Digital 2026</text>
+  </svg>

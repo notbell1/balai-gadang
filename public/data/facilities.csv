@@ -1,0 +1,22 @@
+
+facility_id,name,category,rw_id,latitude,longitude,address,description,photo,operational_hours,contact_info
+FAC001,"Mushalla Al Abidin","Keagamaan","RW005",-0.832203,100.361538,"RW 05","Tempat ibadah masyarakat yang digunakan untuk kegiatan shalat dan aktivitas keagamaan warga sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC002,"Lapangan Serba Guna","Olahraga","RW001",-0.839258,100.362388,"RW 01","Fasilitas olahraga dan ruang terbuka yang dapat dimanfaatkan untuk kegiatan olahraga, aktivitas warga, dan kegiatan kemasyarakatan.","","Setiap hari 06:00-22:00","08000000"
+FAC003,"MAN 3 Padang","Pendidikan","RW005",-0.835414,100.365665,"RW 05","Fasilitas pendidikan yang mendukung kegiatan pembelajaran dan pengembangan pendidikan masyarakat di wilayah sekitar.","","Senin-Sabtu 07:00-16:00","08000000"
+FAC004,"Masjid Ar-Rahman","Keagamaan","RW004",-0.836788,100.360213,"RW 04","Tempat ibadah yang menjadi pusat kegiatan keagamaan dan aktivitas sosial masyarakat di lingkungan sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC005,"MDA Masjid Surau Balenggek","Keagamaan","RW003",-0.837157,100.358025,"RW 03","Lembaga pendidikan keagamaan yang mendukung pembelajaran agama bagi anak-anak dan masyarakat sekitar.","","Senin-Sabtu 13:00-18:00","08000000"
+FAC006,"MDTA Mushalla Ikhwah","Keagamaan","RW004",-0.837586,100.362923,"RW 04","Fasilitas pendidikan keagamaan yang digunakan untuk kegiatan pembelajaran agama dan pembinaan generasi muda.","","Senin-Sabtu 13:00-18:00","08000000"
+FAC007,"Masjid Baitul Muhaimin","Keagamaan","RW003",-0.833096,100.353996,"RW 03","Tempat ibadah masyarakat yang juga dapat menjadi pusat kegiatan keagamaan dan sosial warga sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC008,"Masjid Raya Koto Tangah","Keagamaan","RW003",-0.840373,100.365003,"RW 03","Masjid yang berperan sebagai pusat ibadah dan kegiatan keagamaan serta kemasyarakatan bagi masyarakat sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC009,"Masjid Surau Balenggek","Keagamaan","RW003",-0.837151,100.358040,"RW 03","Tempat ibadah yang mendukung pelaksanaan kegiatan keagamaan dan interaksi sosial masyarakat di lingkungan sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC010,"Masjid Taqwa","Keagamaan","RW003",-0.839490,100.359155,"RW 03","Tempat ibadah masyarakat yang digunakan untuk kegiatan shalat, pengajian, dan aktivitas keagamaan lainnya.","","Setiap hari 04:00-21:00","08000000"
+FAC011,"Mushalla Ikhwah","Keagamaan","RW004",-0.837587,100.362908,"RW 04","Mushalla yang melayani kebutuhan ibadah masyarakat serta mendukung kegiatan keagamaan warga sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC012,"Mushalla Muhsinin","Keagamaan","RW005",-0.832321,100.359498,"RW 05","Tempat ibadah masyarakat yang menjadi bagian dari kegiatan keagamaan dan sosial warga di lingkungan sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC013,"Mushalla Zainul Karim","Keagamaan","RW002",-0.832110,100.371998,"RW 02","Mushalla yang digunakan sebagai fasilitas ibadah dan kegiatan keagamaan masyarakat setempat.","","Setiap hari 04:00-21:00","08000000"
+FAC014,"Mushalla Al-Ikhlas","Keagamaan","RW002",-0.831682,100.371076,"RW 02","Tempat ibadah masyarakat yang mendukung kegiatan shalat dan aktivitas keagamaan warga sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC015,"Mushalla Al-Kautsar","Keagamaan","RW003",-0.839976,100.361588,"RW 03","Mushalla yang menjadi fasilitas ibadah dan tempat berlangsungnya kegiatan keagamaan masyarakat sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC016,"Mushalla Baitul Jannah","Keagamaan","RW002",-0.836047,100.367984,"RW 02","Tempat ibadah yang mendukung kebutuhan spiritual dan kegiatan keagamaan masyarakat di lingkungan sekitar.","","Setiap hari 04:00-21:00","08000000"
+FAC017,"Panti Asuhan Bundo Saiyo","Pendidikan","RW005",-0.830476,100.361088,"RW 05","Lembaga sosial yang berperan dalam mendukung pembinaan, pendidikan, dan kesejahteraan anak-anak yang berada dalam pengasuhan.","","Setiap hari 08:00-17:00","08000000"
+FAC018,"Pasar Pagi Tanjung Aur","UMKM","RW004",-0.838258,100.358975,"RW 04","Pusat aktivitas perdagangan masyarakat yang menyediakan kebutuhan sehari-hari serta mendukung aktivitas ekonomi dan UMKM lokal.","","Setiap hari 06:00-12:00","08000000"
+FAC019,"Pasar Pagi Tanjung Aur","UMKM","RW003",-0.839187,100.359602,"RW 03","Kawasan perdagangan pagi yang menjadi tempat transaksi kebutuhan sehari-hari dan mendukung perekonomian masyarakat sekitar.","","Setiap hari 06:00-12:00","08000000"
+

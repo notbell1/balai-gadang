@@ -1,0 +1,433 @@
+{
+  "groupName": "Tim KKN Kelurahan Balai Gadang",
+  "theme": "Digitalisasi Informasi Spasial, Pemetaan Fasilitas Publik, dan Pemberdayaan Potensi Unggulan Kelurahan Balai Gadang",
+  "period": "Semester Genap 2026 (Agustus 2026)",
+  "university": "Universitas Islam Sumatera Barat",
+  "universityAbbr": "UISB",
+  "faculty": "Dosen Psikologi",
+  "dplName": "Rahman Pranovri Putra, M.Psi.",
+  "dplNip": "0000000000 0000 0000 000",
+  "location": "Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang",
+  "summary": "Kelompok Mahasiswa Kuliah Kerja Nyata (KKN) Universitas Islam Sumatera Barat (UISB) berkolaborasi bersama Pemerintah Kelurahan, Pengurus RW, dan Tokoh Masyarakat Balai Gadang dalam mewujudkan keterbukaan informasi publik, pemetaan spasial fasilitas wilayah, dan promosi potensi sentra tanaman hias serta UMKM.",
+  "webDeveloper": {
+    "name": "Abbel",
+    "nim": "2359201015",
+    "major": "Sistem Informasi",
+    "faculty": "-",
+    "university": "Universitas Islam Sumatera Barat",
+    "role": "Ketua Proker & Perancang Sistem Informasi",
+    "bio": "Perancang sistem informasi digital dan pemetaan wilayah interaktif Kelurahan Balai Gadang dari Program Studi Sistem Informasi UISB.",
+    "focusAreas": [
+      "Pemetaan Spasial Fasilitas Publik",
+      "Katalog Digital Potensi UMKM & Agrowisata",
+      "Sistem Informasi Kependudukan & Wilayah RW",
+      "Akses Informasi Cepat Ramah Warga & QR Code"
+    ],
+    "responsibilities": [
+      "Penyusunan arsitektur basis data spasial fasilitas wilayah berbasis OpenStreetMap",
+      "Implementasi peta interaktif dan katalog profil pelayanan publik terpadu",
+      "Penyediaan akses informasi terbuka yang mudah dijangkau seluruh lapisan warga"
+    ]
+  },
+  "members": [
+    {
+      "id": "KKN-01",
+      "name": "Muhammad Faridz Maulana",
+      "nim": "2355202006",
+      "role": "Ketua Kelompok",
+      "division": "Pimpinan Inti (BPH)",
+      "major": "Teknik Informatika",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2355202006_MuhammadFaridzMaulana.webp",
+      "email": "mfaridzmaulana27@gmail.com",
+      "phone": "+62 895-1856-2600",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      ]
+    },
+    {
+      "id": "KKN-02",
+      "name": "Adrian Saputra",
+      "nim": "2313201018",
+      "role": "Wakil Ketua",
+      "division": "Pimpinan Inti (BPH)",
+      "major": "Kesehatan Masyarakat",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2313201018_AdrianSaputra.jpg",
+      "email": "yanprost08@gmail.com",
+      "phone": "+62 831-8269-7418",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "Donec ullamcorper nulla non metus auctor fringilla."
+      ]
+    },
+    {
+      "id": "KKN-03",
+      "name": "Azzahra",
+      "nim": "0000000000",
+      "role": "Sekretaris 1",
+      "division": "Pimpinan Inti (BPH)",
+      "major": "Kesehatan Masyarakat",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 822-1172-6207",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Curabitur blandit tempus porttitor.",
+        "Maecenas faucibus mollis interdum."
+      ]
+    },
+    {
+      "id": "KKN-04",
+      "name": "Safinatul Ilmi",
+      "nim": "000000000",
+      "role": "Sekretaris 2",
+      "division": "Pimpinan Inti (BPH)",
+      "major": "Kesehatan Masyarakat",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 812-8906-7519",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Aenean lacinia bibendum nulla sed consectetur.",
+        "Vestibulum id ligula porta felis euismod semper."
+      ]
+    },
+    {
+      "id": "KKN-05",
+      "name": "Friska Sahani Tanjung",
+      "nim": "000000000",
+      "role": "Bendahara",
+      "division": "Pimpinan Inti (BPH)",
+      "major": "Psikologi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 821-4954-9084",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+        "Nullam id dolor id nibh ultricies vehicula ut id elit."
+      ]
+    },
+    {
+      "id": "KKN-06",
+      "name": "Dinatul Islami",
+      "nim": "2359201008",
+      "role": "Koordinator Divisi Acara",
+      "division": "Divisi Acara",
+      "major": "Sistem Informasi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2359201008_DinatulIslami.jpg",
+      "email": "@gmail.com",
+      "phone": "+62 822-8421-3148",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Cras mattis consectetur purus sit amet fermentum.",
+        "Donec sed odio dui."
+      ]
+    },
+    {
+      "id": "KKN-07",
+      "name": "Hafizil Ilmi",
+      "nim": "2373201012",
+      "role": "Anggota Divisi Acara",
+      "division": "Divisi Acara",
+      "major": "Psikologi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2373201012_HafizilIlmi.jpg",
+      "email": "hafizilpsikologi10@gmail.com",
+      "phone": "+62 821-3020-9476",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Donec id elit non mi porta gravida at eget metus.",
+        "Etiam porta sem malesuada magna mollis euismod."
+      ]
+    },
+    {
+      "id": "KKN-08",
+      "name": "Abdul Aziz",
+      "nim": "2355202012",
+      "role": "Anggota Divisi Acara",
+      "division": "Divisi Acara",
+      "major": "Teknik Informatika",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2355202012_AbdulAziz.jpg",
+      "email": "crawziz1122@gmail.com",
+      "phone": "+62 897-7465-090",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Vestibulum id ligula porta felis euismod semper.",
+        "Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+      ]
+    },
+    {
+      "id": "KKN-09",
+      "name": "Sonya Sesmita",
+      "nim": "0000000000",
+      "role": "Anggota Divisi Acara",
+      "division": "Divisi Acara",
+      "major": "Ilmu Hukum",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 812-7797-4067",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Sed posuere consectetur est at lobortis.",
+        "Nulla vitae elit libero, a pharetra augue."
+      ]
+    },
+    {
+      "id": "KKN-10",
+      "name": "Suci Yulia Agusni",
+      "nim": "0000000000",
+      "role": "Koordinator Divisi PDD",
+      "division": "Divisi PDD",
+      "major": "Kesehatan Masyarakat",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 831-5763-5447",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Fusce dapibus, tellus ac cursus commodo.",
+        "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+      ]
+    },
+    {
+      "id": "KKN-11",
+      "name": "Mela Saputri Ningsih",
+      "nim": "0000000000",
+      "role": "Anggota Divisi PDD",
+      "division": "Divisi PDD",
+      "major": "Sistem Informasi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 859-6628-4128",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Donec ullamcorper nulla non metus auctor fringilla.",
+        "Maecenas sed diam eget risus varius blandit sit amet non magna."
+      ]
+    },
+    {
+      "id": "KKN-12",
+      "name": "Khairani Putri Azzahra",
+      "nim": "0000000000",
+      "role": "Anggota Divisi PDD",
+      "division": "Divisi PDD",
+      "major": "Ilmu Hukum",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 831-9343-7784",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "Cras justo odio, dapibus ac facilisis in, egestas eget quam."
+      ]
+    },
+    {
+      "id": "KKN-13",
+      "name": "Shintya Elna Dwita",
+      "nim": "0000000000",
+      "role": "Koordinator Divisi Konsumsi",
+      "division": "Divisi Konsumsi",
+      "major": "Psikologi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 838-5391-8411",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Nulla vitae elit libero, a pharetra augue.",
+        "Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+      ]
+    },
+    {
+      "id": "KKN-14",
+      "name": "Ladzya Fatharany",
+      "nim": "0000000000",
+      "role": "Anggota Divisi Konsumsi",
+      "division": "Divisi Konsumsi",
+      "major": "Teknik Informatika",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 838-0837-1825",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Donec sed odio dui.",
+        "Etiam porta sem malesuada magna mollis euismod."
+      ]
+    },
+    {
+      "id": "KKN-15",
+      "name": "Rayhan Jamel Pasha",
+      "nim": "0000000000",
+      "role": "Anggota Divisi Konsumsi",
+      "division": "Divisi Konsumsi",
+      "major": "Psikologi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 838-8041-660",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Aenean lacinia bibendum nulla sed consectetur.",
+        "Vestibulum id ligula porta felis euismod semper."
+      ]
+    },
+    {
+      "id": "KKN-16",
+      "name": "Hari Ihsan Nurijal",
+      "nim": "0000000000",
+      "role": "Koordinator Divisi Perlengkapan",
+      "division": "Divisi Perlengkapan",
+      "major": "Sistem Informasi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 813-8000-0208",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+        "Nullam id dolor id nibh ultricies vehicula ut id elit."
+      ]
+    },
+    {
+      "id": "KKN-17",
+      "name": "Abbel",
+      "nim": "2359201015",
+      "role": "Anggota Divisi Perlengkapan",
+      "division": "Divisi Perlengkapan",
+      "major": "Sistem Informasi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2359201015_Abbel.png",
+      "email": "abbelkadafi@gmail.com",
+      "phone": "+62 822-8759-2930",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Cras mattis consectetur purus sit amet fermentum.",
+        "Donec sed odio dui."
+      ]
+    },
+    {
+      "id": "KKN-18",
+      "name": "Asral Hidayat",
+      "nim": "2355202010",
+      "role": "Anggota Divisi Perlengkapan",
+      "division": "Divisi Perlengkapan",
+      "major": "Teknik Informatika",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2355202010_AsralHidayat.png",
+      "email": "@gmail.com",
+      "phone": "+62 821-6906-0584",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Donec id elit non mi porta gravida at eget metus.",
+        "Etiam porta sem malesuada magna mollis euismod."
+      ]
+    },
+    {
+      "id": "KKN-19",
+      "name": "Fadila Khairunnisa",
+      "nim": "0000000000",
+      "role": "Anggota Divisi Perlengkapan",
+      "division": "Divisi Perlengkapan",
+      "major": "Psikologi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 838-0837-1825",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Curabitur blandit tempus porttitor.",
+        "Maecenas faucibus mollis interdum."
+      ]
+    },
+    {
+      "id": "KKN-20",
+      "name": "Robi Cahyadi",
+      "nim": "0000000000",
+      "role": "Koordinator Divisi Humas",
+      "division": "Divisi Humas",
+      "major": "Sistem Informasi",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/",
+      "email": "@gmail.com",
+      "phone": "+62 823-9299-5445",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Sed posuere consectetur est at lobortis.",
+        "Nulla vitae elit libero, a pharetra augue."
+      ]
+    },
+    {
+      "id": "KKN-21",
+      "name": "Thahirah Tasman",
+      "nim": "2374201015",
+      "role": "Anggota Divisi Humas",
+      "division": "Divisi Humas",
+      "major": "Ilmu Hukum",
+      "faculty": "-",
+      "university": "Universitas Islam Sumatera Barat",
+      "photo": "/images/mahasiswa/2374201015_ThahirahTasman.jpg",
+      "email": "@gmail.com",
+      "phone": "+62 838-2474-1335",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.",
+      "programs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Fusce dapibus, tellus ac cursus commodo.",
+        "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+      ]
+    }
+  ]
+}

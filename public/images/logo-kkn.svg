@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" className="w-full h-full">
+  <defs>
+    <!-- Maroon Outer Ring Gradient -->
+    <linearGradient id="kknMaroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B2127"/>
+      <stop offset="60%" stop-color="#6B1A1E"/>
+      <stop offset="100%" stop-color="#4F1014"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="kknGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD470"/>
+      <stop offset="50%" stop-color="#FCA228"/>
+      <stop offset="100%" stop-color="#C9750D"/>
+    </linearGradient>
+
+    <!-- Sun Disc Gradient -->
+    <radialGradient id="kknSunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFDE7A"/>
+      <stop offset="70%" stop-color="#FCA228"/>
+      <stop offset="100%" stop-color="#E8820B"/>
+    </radialGradient>
+
+    <!-- Rice Field / Green Hills Gradient -->
+    <linearGradient id="kknGreenGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80"/>
+      <stop offset="60%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+
+    <linearGradient id="kknGreenGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#14532D"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="kknShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4F1014" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Base / Background -->
+  <circle cx="250" cy="200" r="165" fill="#FFFFFF"/>
+
+  <!-- Sun Disc -->
+  <circle cx="315" cy="130" r="42" fill="url(#kknSunGrad)" />
+
+  <!-- Outer Ring (Maroon with 3D Depth) -->
+  <circle cx="250" cy="200" r="168" stroke="url(#kknMaroonGrad)" stroke-width="18" fill="none" />
+  
+  <!-- Outer Gold Accent Wings on Lower Ring -->
+  <path d="M96 230 C90 280 120 325 170 348 C160 338 140 310 135 285 C118 290 102 260 96 230 Z" fill="url(#kknGoldGrad)" />
+  <path d="M404 230 C410 280 380 325 330 348 C340 338 360 310 365 285 C382 290 398 260 404 230 Z" fill="url(#kknGoldGrad)" />
+
+  <!-- Green Rice Fields / Terraced Land -->
+  <!-- Layer 1 -->
+  <path d="M160 270 Q250 215 370 240 C350 300 290 328 200 325 Q170 300 160 270 Z" fill="url(#kknGreenGrad2)" />
+  <!-- Layer 2 -->
+  <path d="M210 268 Q280 238 350 255 C330 305 270 322 210 310 Z" fill="url(#kknGreenGrad1)" />
+
+  <!-- Winding Golden Path / Road -->
+  <path d="M150 215 Q240 215 220 255 Q190 295 245 328 L230 332 Q150 295 190 255 Q205 230 150 220 Z" fill="url(#kknGoldGrad)" />
+
+  <!-- Green Leaves (Right Side) -->
+  <g transform="translate(320, 185)">
+    <!-- Leaf 1 (Top) -->
+    <path d="M35 15 C35 15 65 10 75 40 C60 55 35 45 35 15 Z" fill="#22C55E" />
+    <path d="M35 15 Q55 30 75 40" stroke="#14532D" stroke-width="1.5" />
+    
+    <!-- Leaf 2 (Middle) -->
+    <path d="M30 45 C30 45 70 50 72 85 C45 92 25 70 30 45 Z" fill="#16A34A" />
+    <path d="M30 45 Q50 65 72 85" stroke="#14532D" stroke-width="1.5" />
+
+    <!-- Leaf 3 (Small) -->
+    <path d="M20 40 C20 40 45 35 48 58 C32 65 18 55 20 40 Z" fill="#4ADE80" />
+    
+    <!-- Stem -->
+    <path d="M15 70 Q25 45 35 15" stroke="#166534" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Minangkabau Rumah Gadang (Centerpiece) -->
+  <!-- House Base & Pillars -->
+  <path d="M195 185 L305 185 L295 225 L205 225 Z" fill="#6B1A1E" />
+  <rect x="235" y="185" width="12" height="15" fill="#FCA228" rx="2" />
+  <rect x="253" y="185" width="12" height="15" fill="#FCA228" rx="2" />
+  <rect x="235" y="204" width="12" height="15" fill="#FCA228" rx="2" />
+  <rect x="253" y="204" width="12" height="15" fill="#FCA228" rx="2" />
+
+  <!-- Gonjong Roof with Gold Finials -->
+  <!-- Main Central Peak -->
+  <path d="M110 190 Q170 185 200 145 Q245 70 250 48 Q255 70 300 145 Q330 185 390 190 Q340 165 305 160 Q250 140 250 140 Q250 140 195 160 Q160 165 110 190 Z" fill="url(#kknMaroonGrad)" />
+  
+  <!-- Left Gonjong Tip -->
+  <path d="M110 190 Q160 160 180 95 Q183 90 185 100 Q190 135 220 160 Z" fill="#8B2127" />
+  
+  <!-- Right Gonjong Tip -->
+  <path d="M390 190 Q340 160 320 95 Q317 90 315 100 Q310 135 280 160 Z" fill="#5A1418" />
+
+  <!-- Gold Finials (Puncak Gonjong) -->
+  <circle cx="250" cy="46" r="5" fill="url(#kknGoldGrad)" />
+  <path d="M250 38 L253 46 L247 46 Z" fill="url(#kknGoldGrad)" />
+  <circle cx="180" cy="94" r="3.5" fill="url(#kknGoldGrad)" />
+  <circle cx="320" cy="94" r="3.5" fill="url(#kknGoldGrad)" />
+
+  <!-- Golden Roof Trim -->
+  <path d="M112 188 Q180 180 250 142 Q320 180 388 188" stroke="url(#kknGoldGrad)" stroke-width="3.5" fill="none" />
+
+  <!-- Typography (KKN KELURAHAN BALAI GADANG - 2026 -) -->
+  <!-- "KKN" -->
+  <text x="250" y="360" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="38" font-weight="900" fill="#6B1A1E" letter-spacing="4px">
+    KKN
+  </text>
+
+  <!-- "KELURAHAN" -->
+  <text x="250" y="398" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="29" font-weight="900" fill="#6B1A1E" letter-spacing="3px">
+    KELURAHAN
+  </text>
+
+  <!-- "BALAI GADANG" -->
+  <text x="250" y="440" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="34" font-weight="900" fill="#6B1A1E" letter-spacing="3.5px">
+    BALAI GADANG
+  </text>
+
+  <!-- "— 2026 —" with Golden Horizontal Bars -->
+  <g transform="translate(250, 472)">
+    <!-- Left Dash -->
+    <rect x="-110" y="-10" width="48" height="6" rx="3" fill="url(#kknGoldGrad)" />
+    <!-- Year -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="28" font-weight="900" fill="#C9750D" letter-spacing="3px">
+      2026
+    </text>
+    <!-- Right Dash -->
+    <rect x="62" y="-10" width="48" height="6" rx="3" fill="url(#kknGoldGrad)" />
+  </g>
+</svg>

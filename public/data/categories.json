@@ -1,0 +1,102 @@
+[
+  {
+    "id": "government",
+    "name": "Pemerintahan",
+    "color": "#0284c7",
+    "textColor": "#0369a1",
+    "bgColor": "#e0f2fe",
+    "borderColor": "#bae6fd",
+    "icon": "Building2",
+    "description": "Kantor kelurahan, pos keamanan lingkungan, dan pusat pelayanan administrasi warga."
+  },
+  {
+    "id": "health",
+    "name": "Kesehatan",
+    "color": "#dc2626",
+    "textColor": "#b91c1c",
+    "bgColor": "#fee2e2",
+    "borderColor": "#fecaca",
+    "icon": "HeartPulse",
+    "description": "Puskesmas pembantu, posyandu balita & lansia, klinik pratama, dan apotek."
+  },
+  {
+    "id": "education",
+    "name": "Pendidikan",
+    "color": "#7c3aed",
+    "textColor": "#6d28d9",
+    "bgColor": "#ede9fe",
+    "borderColor": "#ddd6fe",
+    "icon": "GraduationCap",
+    "description": "SD Negeri, SMP, SMA/SMK, MTs, Pondok Pesantren, TPQ/TQA, dan PAUD."
+  },
+  {
+    "id": "religious",
+    "name": "Keagamaan",
+    "color": "#059669",
+    "textColor": "#047857",
+    "bgColor": "#d1fae5",
+    "borderColor": "#a7f3d0",
+    "icon": "Landmark",
+    "description": "Masjid Jami', Mushalla warga, surau adat, dan pusat kajian keagamaan."
+  },
+  {
+    "id": "sports",
+    "name": "Olahraga",
+    "color": "#d97706",
+    "textColor": "#b45309",
+    "bgColor": "#fef3c7",
+    "borderColor": "#fde68a",
+    "icon": "Trophy",
+    "description": "Lapangan sepak bola, lapangan bulutangkis, voli, dan fasilitas kebugaran warga."
+  },
+  {
+    "id": "youth",
+    "name": "Kepemudaan",
+    "color": "#0d9488",
+    "textColor": "#0f766e",
+    "bgColor": "#ccfbf1",
+    "borderColor": "#99f6e4",
+    "icon": "Users",
+    "description": "Sekretariat Karang Taruna, sanggar seni budaya Randai/Silek, dan balai kreativitas pemuda."
+  },
+  {
+    "id": "umkm",
+    "name": "UMKM / Ekonomi",
+    "color": "#ca8a04",
+    "textColor": "#a16207",
+    "bgColor": "#fef9c3",
+    "borderColor": "#fef08a",
+    "icon": "Store",
+    "description": "Sentra keripik & kuliner khas Minang, tanaman hias Lubuk Minturun, pertanian, peternakan, dan perbengkelan."
+  },
+  {
+    "id": "tourism",
+    "name": "Wisata & Alam",
+    "color": "#16a34a",
+    "textColor": "#15803d",
+    "bgColor": "#dcfce7",
+    "borderColor": "#bbf7d0",
+    "icon": "Trees",
+    "description": "Objek pemandian alami sungai jernih, agrowisata buah, wisata alam perbukitan, dan rute trekking."
+  },
+  {
+    "id": "flood_risk",
+    "name": "Mitigasi & Risiko Banjir",
+    "color": "#ea580c",
+    "textColor": "#c2410c",
+    "bgColor": "#ffedd5",
+    "borderColor": "#fed7aa",
+    "icon": "Waves",
+    "description": "Pos pantau debit air sungai Batang Kandis/Batang Air Dingin, jalur evakuasi, dan titik rawan genangan."
+  },
+  {
+    "id": "public_facility",
+    "name": "Fasilitas Umum",
+    "color": "#475569",
+    "textColor": "#334155",
+    "bgColor": "#f1f5f9",
+    "borderColor": "#e2e8f0",
+    "icon": "MapPin",
+    "description": "PAMSIMAS/SPAM air bersih, TPS 3R pengolahan sampah, halte angkutan, dan jembatan penghubung."
+  }
+]
