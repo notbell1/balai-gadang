@@ -808,7 +808,7 @@ export const KknTeamSection: React.FC<KknTeamSectionProps> = ({ kknTeam }) => {
               </h4>
               {teamData.dplNip && (
                 <p className="text-xs text-slate-300 font-mono mt-0.5">
-                  NIP: {teamData.dplNip}
+                  NUPTK: {teamData.dplNip}
                 </p>
               )}
               <div className="mt-3 pt-2.5 border-t border-white/10 text-xs text-slate-300">
@@ -945,7 +945,7 @@ export const KknTeamSection: React.FC<KknTeamSectionProps> = ({ kknTeam }) => {
                     {teamData.dplName}
                   </h4>
                   <p className="text-xs text-slate-300 font-mono mt-0.5">
-                    NIP. {teamData.dplNip}
+                    NUPTK. {teamData.dplNip}
                   </p>
                   <div className="text-[11px] text-slate-300 mt-2 pt-2 border-t border-slate-700">
                     {teamData.faculty} &bull; {teamData.university}

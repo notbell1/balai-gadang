@@ -100,9 +100,10 @@ export const PotentialSection: React.FC<PotentialSectionProps> = ({
               Potensi Unggulan ({potentials.length})
             </h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl">
-              Eksplorasi sentra tanaman hias Lubuk Minturun, ekowisata alam,
-              agrowisata durian, UMKM, dan budaya lokal dengan tampilan ringkas
-              3 data per halaman.
+              Jelajahi beragam potensi unggulan Kelurahan Balai Gadang, mulai
+              dari wisata alam dan pemandian, area camping dan akomodasi,
+              agrowisata, pembibitan tanaman dan perikanan, hingga pusat
+              perdagangan serta UMKM masyarakat.
             </p>
           </div>
 
