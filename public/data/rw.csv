@@ -1,9 +1,9 @@
 rw_id,rw_number,name,description,rt_count,leader_name,phone
 RW001,1,"RW 01","Wilayah pelayanan dan koordinasi masyarakat RW 01",3,"Bpk. Sudirman","0821-7446-0000"
-RW002,2,"RW 02","Lingkungan permukiman dan pelayanan warga RW 02",4,"Bpk. Amrizal","0812-6640-1444"
+RW002,2,"RW 02","Lingkungan permukiman dan pelayanan warga RW 02",3,"Bpk. Amrizal","0812-6640-1444"
 RW003,3,"RW 03","Kawasan pembinaan dan pemberdayaan masyarakat RW 03",3,"Bpk. Rusli","0812-6640-1401"
 RW004,4,"RW 04","Wilayah koordinasi sosial kemasyarakatan RW 04",4,"Bpk. Julidarman","0813-74931-19-39"
-RW005,5,"RW 05","Lingkungan masyarakat dengan kegiatan pelayanan RW 05",5,"Bpk. Edijon","0813-6365-7329"
+RW005,5,"RW 05","Lingkungan masyarakat dengan kegiatan pelayanan RW 05",4,"Bpk. Edijon","0813-6365-7329"
 RW006,6,"RW 06","Wilayah pengelolaan dan pelayanan administrasi warga RW 06",5,"Bpk. Mairi Yarmon","085-3651-6611"
 RW007,7,"RW 07","Kawasan pembinaan kehidupan bermasyarakat RW 07",5,"Bpk. Yulizar","0813-6301-2013"
 RW008,8,"RW 08","Wilayah pelayanan publik dan koordinasi warga RW 08",6,"Bpk. Syafri Sabar","0852-6347-6461"

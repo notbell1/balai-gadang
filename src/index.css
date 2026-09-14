@@ -1,28 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-orange: #FCA228;
-  --color-brand-yellow-orange: #FCB739;
-  --color-brand-gold: #FCCB5D;
-  --color-brand-purple: #7E549E;
-  --color-brand-purple-medium: #8F66AC;
-  --color-brand-purple-dark: #633B83;
-  --color-brand-purple-light: #A582BF;
+  --color-brand-orange: #fca228;
+  --color-brand-yellow-orange: #fcb739;
+  --color-brand-gold: #fccb5d;
+  --color-brand-purple: #7e549e;
+  --color-brand-purple-medium: #8f66ac;
+  --color-brand-purple-dark: #633b83;
+  --color-brand-purple-light: #a582bf;
 }
 
 :root {
-  --brand-orange: #FCA228;
-  --brand-yellow-orange: #FCB739;
-  --brand-gold: #FCCB5D;
-  --brand-purple: #7E549E;
-  --brand-purple-medium: #8F66AC;
-  --brand-purple-dark: #633B83;
-  --brand-purple-light: #A582BF;
+  --brand-orange: #fca228;
+  --brand-yellow-orange: #fcb739;
+  --brand-gold: #fccb5d;
+  --brand-purple: #7e549e;
+  --brand-purple-medium: #8f66ac;
+  --brand-purple-dark: #633b83;
+  --brand-purple-light: #a582bf;
 }
 
 @layer base {
   body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family:
+      "Plus Jakarta Sans",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
   }
 }
 
@@ -36,7 +43,9 @@
 .leaflet-popup-content-wrapper {
   padding: 0 !important;
   border-radius: 1rem !important;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.15),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
   border: 1px solid rgba(226, 232, 240, 0.9) !important;
   overflow: hidden !important;
 }
@@ -52,7 +61,8 @@
 
 /* Custom animations for subtle background movements */
 @keyframes float-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
   }
   33% {
@@ -64,7 +74,8 @@
 }
 
 @keyframes float-reverse-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
   }
   33% {
@@ -76,7 +87,8 @@
 }
 
 @keyframes float-gentle {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) scale(1);
   }
   50% {

@@ -10,16 +10,15 @@
   "location": "Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang",
   "summary": "Kelompok Mahasiswa Kuliah Kerja Nyata (KKN) Universitas Islam Sumatera Barat (UISB) berkolaborasi dengan Pemerintah Kelurahan, Pengurus RW, dan Tokoh Masyarakat Kelurahan Balai Gadang dalam mendukung keterbukaan informasi dan penyediaan data wilayah melalui pemetaan 14 RW, pendataan fasilitas publik, serta pengenalan berbagai potensi lokal di bidang wisata dan alam, UMKM dan ekonomi, pendidikan, kesehatan, keagamaan, dan kepemudaan sebagai bagian dari upaya memperkuat informasi wilayah dan mendukung pengembangan potensi masyarakat secara berkelanjutan.",
   "webDeveloper": {
-    "name": "Abbel",
-    "nim": "2359201015",
-    "major": "Sistem Informasi",
-    "faculty": "-",
+    "name": "Hamba Allah",
+    "nim": "1234567890",
+    "major": "UISB",
+    "faculty": "Indonesia",
     "university": "Universitas Islam Sumatera Barat",
-    "role": "Ketua Proker & Perancang Sistem Informasi",
+    "role": "Perancang Sistem",
     "bio": "Perancang sistem informasi digital dan pemetaan wilayah interaktif Kelurahan Balai Gadang dari Program Studi Sistem Informasi UISB.",
     "focusAreas": [
       "Pemetaan Spasial Fasilitas Publik",
-      "Katalog Digital Potensi UMKM & Agrowisata",
       "Sistem Informasi Kependudukan & Wilayah RW",
       "Akses Informasi Cepat Ramah Warga & QR Code"
     ],

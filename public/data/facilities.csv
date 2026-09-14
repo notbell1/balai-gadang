@@ -1,6 +1,6 @@
 
 facility_id,name,category,rw_id,latitude,longitude,address,description,photo,operational_hours,contact_info
-FAC001,"Mushalla Al Abidin","Keagamaan","RW005",-0.832203,100.361538,"RW 05","Mushalla Al Abidin merupakan salah satu fasilitas keagamaan yang melayani kebutuhan ibadah masyarakat di wilayah RW 05. Keberadaannya menjadi bagian dari sarana peribadatan yang dapat diakses oleh warga di lingkungan sekitar.
+FAC001,"Mushalla Al Abidin","religious","RW005",-0.832203,100.361538,"RW 05","Mushalla Al Abidin merupakan salah satu fasilitas keagamaan yang melayani kebutuhan ibadah masyarakat di wilayah RW 05. Keberadaannya menjadi bagian dari sarana peribadatan yang dapat diakses oleh warga di lingkungan sekitar.
 
 Mushalla ini digunakan untuk pelaksanaan shalat dan kegiatan ibadah sehari-hari. Selain itu, lingkungan mushalla dapat dimanfaatkan untuk berbagai kegiatan keagamaan yang melibatkan masyarakat setempat.
 
@@ -8,7 +8,7 @@ Keberadaan fasilitas ini turut mendukung terbentuknya lingkungan masyarakat yang
 
 Sebagai bagian dari fasilitas wilayah, Mushalla Al Abidin menjadi salah satu titik penting dalam pemetaan fasilitas keagamaan Kelurahan Balai Gadang.","","",""
 
-FAC002,"Lapangan Serba Guna","Olahraga","RW001",-0.839258,100.362388,"RW 01","Lapangan Serba Guna merupakan ruang terbuka yang dapat dimanfaatkan masyarakat untuk berbagai kegiatan olahraga dan aktivitas bersama. Fasilitas ini berada di lingkungan RW 01 dan menjadi salah satu sarana pendukung kegiatan masyarakat.
+FAC002,"Lapangan Serba Guna","sports","RW001",-0.839258,100.362388,"RW 01","Lapangan Serba Guna merupakan ruang terbuka yang dapat dimanfaatkan masyarakat untuk berbagai kegiatan olahraga dan aktivitas bersama. Fasilitas ini berada di lingkungan RW 01 dan menjadi salah satu sarana pendukung kegiatan masyarakat.
 
 Lapangan dapat digunakan untuk berbagai aktivitas fisik, permainan olahraga, maupun kegiatan warga yang membutuhkan ruang terbuka. Pemanfaatannya dapat disesuaikan dengan kebutuhan masyarakat dan kegiatan lingkungan.
 
@@ -16,7 +16,7 @@ Selain fungsi olahraga, keberadaan lapangan juga dapat mendukung interaksi sosia
 
 Lapangan Serba Guna menjadi salah satu fasilitas olahraga yang dapat ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang sebagai ruang aktivitas masyarakat.","","",""
 
-FAC003,"MAN 3 Padang","Pendidikan","RW005",-0.835414,100.365665,"RW 05","MAN 3 Padang merupakan salah satu fasilitas pendidikan yang berada di wilayah Kelurahan Balai Gadang. Fasilitas ini menjadi bagian dari sarana pendidikan yang mendukung proses pembelajaran masyarakat di wilayah sekitar.
+FAC003,"MAN 3 Padang","education","RW005",-0.835414,100.365665,"RW 05","MAN 3 Padang merupakan salah satu fasilitas pendidikan yang berada di wilayah Kelurahan Balai Gadang. Fasilitas ini menjadi bagian dari sarana pendidikan yang mendukung proses pembelajaran masyarakat di wilayah sekitar.
 
 Sebagai lembaga pendidikan, MAN 3 Padang menyediakan lingkungan pembelajaran bagi peserta didik pada jenjang pendidikan menengah berbasis madrasah. Kegiatan pendidikan mencakup proses pembelajaran dan pengembangan potensi peserta didik.
 
@@ -24,7 +24,7 @@ Keberadaan fasilitas pendidikan ini turut mendukung peningkatan akses pendidikan
 
 MAN 3 Padang dicantumkan dalam pemetaan sebagai salah satu titik fasilitas pendidikan yang dapat membantu masyarakat mengenali persebaran sarana pendidikan di wilayah kelurahan.","","",""
 
-FAC004,"Masjid Ar-Rahman","Keagamaan","RW004",-0.836788,100.360213,"RW 04","Masjid Ar-Rahman merupakan fasilitas keagamaan yang digunakan masyarakat di wilayah RW 04 untuk melaksanakan ibadah. Masjid menjadi salah satu sarana penting dalam mendukung kehidupan keagamaan masyarakat setempat.
+FAC004,"Masjid Ar-Rahman","religious","RW004",-0.836788,100.360213,"RW 04","Masjid Ar-Rahman merupakan fasilitas keagamaan yang digunakan masyarakat di wilayah RW 04 untuk melaksanakan ibadah. Masjid menjadi salah satu sarana penting dalam mendukung kehidupan keagamaan masyarakat setempat.
 
 Selain digunakan untuk shalat berjamaah, masjid dapat menjadi tempat pelaksanaan berbagai kegiatan keagamaan. Aktivitas seperti pengajian, pembelajaran keagamaan, dan kegiatan sosial dapat berlangsung di lingkungan masjid.
 
@@ -32,7 +32,7 @@ Keberadaan masjid juga memiliki fungsi sosial dalam mempererat hubungan antarwar
 
 Masjid Ar-Rahman menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC005,"MDA Masjid Surau Balenggek","Keagamaan","RW003",-0.837157,100.358025,"RW 03","MDA Masjid Surau Balenggek merupakan fasilitas pendidikan keagamaan yang berada di lingkungan RW 03. Fasilitas ini mendukung kegiatan pembelajaran agama bagi anak-anak dan masyarakat di wilayah sekitar.
+FAC005,"MDA Masjid Surau Balenggek","religious","RW003",-0.837157,100.358025,"RW 03","MDA Masjid Surau Balenggek merupakan fasilitas pendidikan keagamaan yang berada di lingkungan RW 03. Fasilitas ini mendukung kegiatan pembelajaran agama bagi anak-anak dan masyarakat di wilayah sekitar.
 
 Kegiatan pembelajaran dapat mencakup pendidikan dasar keagamaan dan pembinaan pemahaman nilai-nilai agama. Lingkungan pendidikan tersebut menjadi bagian dari proses pembentukan karakter dan pengetahuan keagamaan generasi muda.
 
@@ -40,7 +40,7 @@ Selain fungsi pendidikan, fasilitas ini juga berkaitan dengan aktivitas masyarak
 
 MDA Masjid Surau Balenggek dicatat sebagai salah satu fasilitas keagamaan dalam pemetaan Kelurahan Balai Gadang yang menunjukkan keberadaan sarana pembinaan pendidikan agama di wilayah RW 03.","","",""
 
-FAC006,"MDTA Mushalla Ikhwah","Keagamaan","RW004",-0.837586,100.362923,"RW 04","MDTA Mushalla Ikhwah merupakan fasilitas pendidikan keagamaan yang berada di wilayah RW 04. Fasilitas ini mendukung kegiatan pembelajaran agama bagi anak-anak dan masyarakat di lingkungan sekitarnya.
+FAC006,"MDTA Mushalla Ikhwah","religious","RW004",-0.837586,100.362923,"RW 04","MDTA Mushalla Ikhwah merupakan fasilitas pendidikan keagamaan yang berada di wilayah RW 04. Fasilitas ini mendukung kegiatan pembelajaran agama bagi anak-anak dan masyarakat di lingkungan sekitarnya.
 
 Kegiatan pembelajaran dapat menjadi sarana untuk memberikan pemahaman dasar mengenai agama sekaligus membentuk karakter peserta didik. Lingkungan mushalla juga mendukung proses pembinaan melalui kegiatan keagamaan.
 
@@ -48,7 +48,7 @@ Keberadaan MDTA turut memperkuat ketersediaan sarana pendidikan nonformal berbas
 
 MDTA Mushalla Ikhwah menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC007,"Masjid Baitul Muhaimin","Keagamaan","RW003",-0.833096,100.353996,"RW 03","Masjid Baitul Muhaimin merupakan salah satu tempat ibadah masyarakat di wilayah RW 03. Masjid ini menjadi sarana yang mendukung pelaksanaan ibadah masyarakat di lingkungan sekitar.
+FAC007,"Masjid Baitul Muhaimin","religious","RW003",-0.833096,100.353996,"RW 03","Masjid Baitul Muhaimin merupakan salah satu tempat ibadah masyarakat di wilayah RW 03. Masjid ini menjadi sarana yang mendukung pelaksanaan ibadah masyarakat di lingkungan sekitar.
 
 Selain kegiatan shalat, masjid dapat dimanfaatkan untuk berbagai kegiatan keagamaan dan pembinaan masyarakat. Aktivitas tersebut dapat meliputi pengajian, kegiatan pendidikan agama, serta kegiatan sosial.
 
@@ -56,7 +56,7 @@ Masjid juga berfungsi sebagai ruang interaksi masyarakat dan tempat mempererat h
 
 Masjid Baitul Muhaimin dicatat dalam pemetaan sebagai salah satu fasilitas keagamaan yang terdapat di Kelurahan Balai Gadang.","","",""
 
-FAC008,"Masjid Raya Koto Tangah","Keagamaan","RW003",-0.840373,100.365003,"RW 03","Masjid Raya Koto Tangah merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 03. Masjid ini menjadi salah satu sarana ibadah yang memiliki peran dalam kehidupan keagamaan masyarakat sekitar.
+FAC008,"Masjid Raya Koto Tangah","religious","RW003",-0.840373,100.365003,"RW 03","Masjid Raya Koto Tangah merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 03. Masjid ini menjadi salah satu sarana ibadah yang memiliki peran dalam kehidupan keagamaan masyarakat sekitar.
 
 Selain digunakan untuk ibadah rutin, masjid dapat menjadi pusat pelaksanaan berbagai kegiatan keagamaan dan kemasyarakatan. Aktivitas tersebut dapat melibatkan masyarakat dari lingkungan sekitar maupun wilayah yang lebih luas.
 
@@ -64,7 +64,7 @@ Keberadaan masjid turut mendukung interaksi sosial dan silaturahmi masyarakat. L
 
 Masjid Raya Koto Tangah menjadi salah satu fasilitas penting yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC009,"Masjid Surau Balenggek","Keagamaan","RW003",-0.837151,100.358040,"RW 03","Masjid Surau Balenggek merupakan fasilitas keagamaan yang digunakan masyarakat di wilayah RW 03. Fasilitas ini mendukung kebutuhan ibadah dan aktivitas keagamaan masyarakat di lingkungan sekitarnya.
+FAC009,"Masjid Surau Balenggek","religious","RW003",-0.837151,100.358040,"RW 03","Masjid Surau Balenggek merupakan fasilitas keagamaan yang digunakan masyarakat di wilayah RW 03. Fasilitas ini mendukung kebutuhan ibadah dan aktivitas keagamaan masyarakat di lingkungan sekitarnya.
 
 Masjid dapat digunakan untuk pelaksanaan shalat berjamaah dan kegiatan keagamaan lainnya. Selain itu, kegiatan pembelajaran agama maupun pengajian dapat dilaksanakan sesuai dengan kebutuhan masyarakat.
 
@@ -72,7 +72,7 @@ Keberadaan masjid juga memberikan ruang bagi masyarakat untuk berinteraksi dan m
 
 Masjid Surau Balenggek dicatat sebagai salah satu titik fasilitas keagamaan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC010,"Masjid Taqwa","Keagamaan","RW003",-0.839490,100.359155,"RW 03","Masjid Taqwa merupakan salah satu tempat ibadah masyarakat yang berada di wilayah RW 03. Fasilitas ini digunakan untuk mendukung pelaksanaan ibadah masyarakat di lingkungan sekitar.
+FAC010,"Masjid Taqwa","religious","RW003",-0.839490,100.359155,"RW 03","Masjid Taqwa merupakan salah satu tempat ibadah masyarakat yang berada di wilayah RW 03. Fasilitas ini digunakan untuk mendukung pelaksanaan ibadah masyarakat di lingkungan sekitar.
 
 Selain shalat berjamaah, masjid dapat digunakan untuk kegiatan pengajian dan pembelajaran keagamaan. Berbagai aktivitas keagamaan tersebut dapat menjadi bagian dari pembinaan masyarakat.
 
@@ -80,7 +80,7 @@ Masjid juga memiliki fungsi sosial sebagai tempat berkumpulnya masyarakat. Kegia
 
 Masjid Taqwa menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC011,"Mushalla Ikhwah","Keagamaan","RW004",-0.837587,100.362908,"RW 04","Mushalla Ikhwah merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 04. Mushalla ini mendukung kebutuhan peribadatan warga di lingkungan sekitarnya.
+FAC011,"Mushalla Ikhwah","religious","RW004",-0.837587,100.362908,"RW 04","Mushalla Ikhwah merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 04. Mushalla ini mendukung kebutuhan peribadatan warga di lingkungan sekitarnya.
 
 Fasilitas ini dapat digunakan untuk pelaksanaan shalat dan berbagai kegiatan keagamaan masyarakat. Lingkungan mushalla juga dapat menjadi tempat berlangsungnya kegiatan pembinaan keagamaan.
 
@@ -88,7 +88,7 @@ Keberadaan mushalla membantu menyediakan akses terhadap sarana ibadah yang dekat
 
 Mushalla Ikhwah menjadi salah satu titik fasilitas keagamaan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC012,"Mushalla Muhsinin","Keagamaan","RW005",-0.832321,100.359498,"RW 05","Mushalla Muhsinin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 05. Mushalla ini digunakan untuk mendukung kebutuhan ibadah masyarakat di lingkungan sekitar.
+FAC012,"Mushalla Muhsinin","religious","RW005",-0.832321,100.359498,"RW 05","Mushalla Muhsinin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 05. Mushalla ini digunakan untuk mendukung kebutuhan ibadah masyarakat di lingkungan sekitar.
 
 Selain kegiatan ibadah rutin, mushalla dapat dimanfaatkan untuk berbagai aktivitas keagamaan masyarakat. Kegiatan tersebut dapat mencakup pengajian, pembelajaran agama, maupun kegiatan sosial.
 
@@ -96,7 +96,7 @@ Mushalla juga menjadi salah satu ruang interaksi masyarakat di lingkungan permuk
 
 Mushalla Muhsinin dicatat sebagai salah satu fasilitas keagamaan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC013,"Mushalla Zainul Karim","Keagamaan","RW002",-0.832110,100.371998,"RW 02","Mushalla Zainul Karim merupakan fasilitas ibadah yang berada di wilayah RW 02. Keberadaannya mendukung kebutuhan masyarakat terhadap sarana peribadatan yang berada di lingkungan permukiman.
+FAC013,"Mushalla Zainul Karim","religious","RW002",-0.832110,100.371998,"RW 02","Mushalla Zainul Karim merupakan fasilitas ibadah yang berada di wilayah RW 02. Keberadaannya mendukung kebutuhan masyarakat terhadap sarana peribadatan yang berada di lingkungan permukiman.
 
 Mushalla digunakan untuk pelaksanaan shalat dan aktivitas keagamaan masyarakat. Fasilitas ini juga dapat dimanfaatkan untuk kegiatan pembelajaran dan pembinaan keagamaan sesuai kebutuhan warga.
 
@@ -104,7 +104,7 @@ Selain fungsi ibadah, mushalla dapat menjadi tempat berkumpul dan berinteraksi b
 
 Mushalla Zainul Karim menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC014,"Mushalla Al-Ikhlas","Keagamaan","RW002",-0.831682,100.371076,"RW 02","Mushalla Al-Ikhlas merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 02. Mushalla ini menjadi bagian dari sarana keagamaan yang mendukung aktivitas masyarakat setempat.
+FAC014,"Mushalla Al-Ikhlas","religious","RW002",-0.831682,100.371076,"RW 02","Mushalla Al-Ikhlas merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 02. Mushalla ini menjadi bagian dari sarana keagamaan yang mendukung aktivitas masyarakat setempat.
 
 Fasilitas ini digunakan untuk pelaksanaan shalat dan berbagai kegiatan keagamaan. Lingkungan mushalla dapat menjadi tempat pembelajaran agama serta kegiatan pembinaan masyarakat.
 
@@ -112,7 +112,7 @@ Keberadaan mushalla membantu menyediakan sarana ibadah yang mudah dijangkau oleh
 
 Mushalla Al-Ikhlas dicatat sebagai salah satu fasilitas keagamaan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC015,"Mushalla Al-Kautsar","Keagamaan","RW003",-0.839976,100.361588,"RW 03","Mushalla Al-Kautsar merupakan salah satu fasilitas ibadah yang berada di wilayah RW 03. Mushalla ini mendukung kebutuhan masyarakat dalam melaksanakan kegiatan peribadatan sehari-hari.
+FAC015,"Mushalla Al-Kautsar","religious","RW003",-0.839976,100.361588,"RW 03","Mushalla Al-Kautsar merupakan salah satu fasilitas ibadah yang berada di wilayah RW 03. Mushalla ini mendukung kebutuhan masyarakat dalam melaksanakan kegiatan peribadatan sehari-hari.
 
 Selain digunakan untuk shalat, mushalla dapat dimanfaatkan untuk kegiatan keagamaan lainnya. Aktivitas seperti pengajian dan pembelajaran agama dapat dilaksanakan sesuai dengan kebutuhan masyarakat.
 
@@ -120,7 +120,7 @@ Mushalla juga dapat berfungsi sebagai ruang interaksi sosial bagi warga sekitar.
 
 Mushalla Al-Kautsar menjadi salah satu titik fasilitas keagamaan yang tercatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC016,"Mushalla Baitul Jannah","Keagamaan","RW002",-0.836047,100.367984,"RW 02","Mushalla Baitul Jannah merupakan fasilitas ibadah masyarakat di wilayah RW 02. Fasilitas ini mendukung kebutuhan peribadatan warga yang berada di lingkungan sekitar.
+FAC016,"Mushalla Baitul Jannah","religious","RW002",-0.836047,100.367984,"RW 02","Mushalla Baitul Jannah merupakan fasilitas ibadah masyarakat di wilayah RW 02. Fasilitas ini mendukung kebutuhan peribadatan warga yang berada di lingkungan sekitar.
 
 Mushalla digunakan untuk pelaksanaan shalat serta berbagai aktivitas keagamaan. Kegiatan pembinaan dan pembelajaran agama juga dapat dilakukan di lingkungan mushalla.
 
@@ -128,7 +128,7 @@ Keberadaan fasilitas ini turut mendukung kehidupan sosial masyarakat melalui keg
 
 Mushalla Baitul Jannah dicatat sebagai salah satu fasilitas keagamaan dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC017,"Panti Asuhan Bundo Saiyo","Pendidikan","RW005",-0.830476,100.361088,"RW 05","Panti Asuhan Bundo Saiyo merupakan lembaga sosial yang berada di wilayah RW 05 dan berperan dalam mendukung kehidupan anak-anak dalam pengasuhan. Fasilitas ini menjadi bagian dari sarana sosial yang memiliki fungsi pembinaan masyarakat.
+FAC017,"Panti Asuhan Bundo Saiyo","education","RW005",-0.830476,100.361088,"RW 05","Panti Asuhan Bundo Saiyo merupakan lembaga sosial yang berada di wilayah RW 05 dan berperan dalam mendukung kehidupan anak-anak dalam pengasuhan. Fasilitas ini menjadi bagian dari sarana sosial yang memiliki fungsi pembinaan masyarakat.
 
 Kegiatan di dalamnya dapat mencakup pemenuhan kebutuhan pendidikan, pembinaan karakter, serta pendampingan anak. Lingkungan panti menjadi tempat bagi anak-anak untuk memperoleh dukungan dalam menjalani proses pertumbuhan dan pendidikan.
 
@@ -136,7 +136,7 @@ Keberadaan panti asuhan juga menunjukkan adanya fasilitas sosial yang berperan d
 
 Panti Asuhan Bundo Saiyo dicatat dalam pemetaan sebagai salah satu fasilitas yang berkaitan dengan pendidikan dan pembinaan masyarakat di Kelurahan Balai Gadang.","","",""
 
-FAC018,"Pasar Pagi Tanjung Aur","UMKM / Ekonomi","RW004",-0.838258,100.358975,"RW 04","Pasar Pagi Tanjung Aur merupakan salah satu pusat aktivitas perdagangan masyarakat di wilayah RW 04. Pasar ini menjadi tempat berlangsungnya kegiatan jual beli berbagai kebutuhan masyarakat.
+FAC018,"Pasar Pagi Tanjung Aur","umkm","RW004",-0.838258,100.358975,"RW 04","Pasar Pagi Tanjung Aur merupakan salah satu pusat aktivitas perdagangan masyarakat di wilayah RW 04. Pasar ini menjadi tempat berlangsungnya kegiatan jual beli berbagai kebutuhan masyarakat.
 
 Aktivitas perdagangan di pasar melibatkan pedagang dan pembeli dari lingkungan sekitar. Keberadaan pasar mendukung pemenuhan kebutuhan sehari-hari sekaligus menjadi ruang bagi masyarakat untuk menjalankan kegiatan ekonomi.
 
@@ -144,7 +144,7 @@ Pasar juga memiliki peran dalam mendukung usaha kecil dan aktivitas ekonomi loka
 
 Pasar Pagi Tanjung Aur menjadi salah satu titik UMKM dan ekonomi yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC019,"Pasar Pagi Tanjung Aur","UMKM / Ekonomi","RW003",-0.839187,100.359602,"RW 03","Pasar Pagi Tanjung Aur merupakan kawasan perdagangan yang berada di wilayah RW 03. Pasar ini menjadi salah satu lokasi aktivitas ekonomi masyarakat, khususnya pada waktu pagi.
+FAC019,"Pasar Pagi Tanjung Aur","umkm","RW003",-0.839187,100.359602,"RW 03","Pasar Pagi Tanjung Aur merupakan kawasan perdagangan yang berada di wilayah RW 03. Pasar ini menjadi salah satu lokasi aktivitas ekonomi masyarakat, khususnya pada waktu pagi.
 
 Kegiatan utama yang berlangsung berupa transaksi kebutuhan sehari-hari antara pedagang dan masyarakat. Aktivitas tersebut menjadikan pasar sebagai salah satu pusat interaksi ekonomi di lingkungan sekitar.
 
@@ -152,7 +152,7 @@ Keberadaan pasar juga memberikan ruang bagi pedagang dan pelaku usaha lokal untu
 
 Pasar Pagi Tanjung Aur dicatat sebagai salah satu titik UMKM dan ekonomi dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC020,"RUMAH RW","Pemerintahan","RW006",-0.8318750004613672,100.365784,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan di tingkat lingkungan yang berada di wilayah RW 06. Fasilitas ini menjadi salah satu sarana yang mendukung koordinasi antara pengurus lingkungan dengan masyarakat.
+FAC020,"RUMAH RW","government","RW006",-0.8318750004613672,100.365784,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan di tingkat lingkungan yang berada di wilayah RW 06. Fasilitas ini menjadi salah satu sarana yang mendukung koordinasi antara pengurus lingkungan dengan masyarakat.
 
 Rumah RW dapat dimanfaatkan untuk kegiatan administrasi, pertemuan, koordinasi, serta penyampaian informasi kepada warga. Berbagai kegiatan yang berkaitan dengan pelayanan dan pengelolaan lingkungan dapat dilaksanakan melalui fasilitas ini.
 
@@ -160,39 +160,39 @@ Keberadaannya membantu pengurus RW dalam menjalankan fungsi koordinasi dan komun
 
 Rumah RW menjadi salah satu titik fasilitas pemerintahan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC021,"RUMAH RW","Pemerintahan","RW007",-0.827439,100.357596,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 07. Fasilitas ini mendukung kegiatan koordinasi dan komunikasi antara pengurus lingkungan dengan masyarakat.
+FAC021,"RUMAH RW","government","RW007",-0.827439,100.357596,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 07. Fasilitas ini mendukung kegiatan koordinasi dan komunikasi antara pengurus lingkungan dengan masyarakat.
 
 Kegiatan yang dapat dilakukan meliputi administrasi warga, pertemuan lingkungan, penyampaian informasi, serta koordinasi kegiatan masyarakat. Rumah RW menjadi salah satu ruang pendukung dalam pengelolaan lingkungan di tingkat RW.
 
 Keberadaan fasilitas ini membantu masyarakat memperoleh akses terhadap kegiatan dan informasi yang berkaitan dengan lingkungan tempat tinggalnya. Selain itu, rumah RW dapat dimanfaatkan sebagai tempat pelaksanaan kegiatan kemasyarakatan.
 
-Rumah RW RW 07 menjadi salah satu fasilitas pemerintahan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
+Rumah RW 07 menjadi salah satu fasilitas pemerintahan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC022,"RUMAH RW","Pemerintahan","RW008",-0.821486,100.359556,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 08. Fasilitas ini menjadi salah satu sarana koordinasi antara pengurus RW dan masyarakat.
+FAC022,"RUMAH RW","government","RW008",-0.821486,100.359556,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 08. Fasilitas ini menjadi salah satu sarana koordinasi antara pengurus RW dan masyarakat.
 
 Rumah RW dapat digunakan untuk mendukung kegiatan administrasi, pertemuan warga, penyampaian informasi, dan koordinasi berbagai kegiatan lingkungan. Pemanfaatannya disesuaikan dengan kebutuhan masyarakat dan pengurus lingkungan.
 
 Keberadaan fasilitas ini membantu memperlancar komunikasi antara pengurus dan warga. Rumah RW juga dapat menjadi tempat berlangsungnya kegiatan sosial dan kemasyarakatan di lingkungan sekitar.
 
-Rumah RW RW 08 dicatat sebagai salah satu titik fasilitas pemerintahan dalam pemetaan Kelurahan Balai Gadang.","","",""
+Rumah RW 08 dicatat sebagai salah satu titik fasilitas pemerintahan dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC023,"RUMAH RW","Pemerintahan","RW009",-0.832026,100.393195,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan salah satu fasilitas pemerintahan lingkungan yang berada di wilayah RW 09. Fasilitas ini mendukung pengelolaan administrasi dan koordinasi masyarakat di tingkat lingkungan.
+FAC023,"RUMAH RW","government","RW009",-0.832026,100.393195,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan salah satu fasilitas pemerintahan lingkungan yang berada di wilayah RW 09. Fasilitas ini mendukung pengelolaan administrasi dan koordinasi masyarakat di tingkat lingkungan.
 
 Rumah RW dapat dimanfaatkan untuk pertemuan warga, penyampaian informasi, serta koordinasi kegiatan masyarakat. Keberadaannya membantu pengurus RW menjalankan tugas pelayanan dan komunikasi dengan warga.
 
 Selain fungsi administrasi, fasilitas ini dapat menjadi ruang untuk kegiatan kemasyarakatan. Interaksi antara pengurus lingkungan dan warga dapat dilakukan melalui berbagai kegiatan yang berlangsung di fasilitas tersebut.
 
-Rumah RW RW 09 menjadi salah satu titik fasilitas pemerintahan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
+Rumah RW 09 menjadi salah satu titik fasilitas pemerintahan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC024,"RUMAH RW","Pemerintahan","RW010",-0.835749,100.372689,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 10. Fasilitas ini mendukung kegiatan pengelolaan dan koordinasi masyarakat di tingkat RW.
+FAC024,"RUMAH RW","government","RW010",-0.835749,100.372689,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah RW merupakan fasilitas pemerintahan lingkungan yang berada di wilayah RW 10. Fasilitas ini mendukung kegiatan pengelolaan dan koordinasi masyarakat di tingkat RW.
 
 Kegiatan yang dapat dilakukan meliputi administrasi lingkungan, pertemuan warga, penyampaian informasi, dan koordinasi berbagai kegiatan. Rumah RW menjadi salah satu sarana pendukung dalam pelayanan masyarakat di lingkungan sekitar.
 
 Keberadaan fasilitas ini juga membantu memperkuat komunikasi antara pengurus RW dengan warga. Berbagai kegiatan sosial dan kemasyarakatan dapat dilaksanakan dengan memanfaatkan fasilitas lingkungan tersebut.
 
-Rumah RW RW 10 dicatat sebagai salah satu fasilitas pemerintahan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
+Rumah RW 10 dicatat sebagai salah satu fasilitas pemerintahan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC025,"MASJID NURUL ILMI","Keagamaan","RW006",-0.834231,100.363686,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurul Ilmi merupakan fasilitas keagamaan yang berada di wilayah RW 06. Masjid ini digunakan masyarakat sebagai tempat melaksanakan ibadah dan berbagai kegiatan keagamaan.
+FAC025,"MASJID NURUL ILMI","religious","RW006",-0.834231,100.363686,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurul Ilmi merupakan fasilitas keagamaan yang berada di wilayah RW 06. Masjid ini digunakan masyarakat sebagai tempat melaksanakan ibadah dan berbagai kegiatan keagamaan.
 
 Selain ibadah rutin, masjid dapat menjadi tempat pelaksanaan pengajian, pembelajaran agama, dan kegiatan keagamaan lainnya. Aktivitas tersebut mendukung pembinaan kehidupan keagamaan masyarakat.
 
@@ -208,7 +208,7 @@ Selain mendukung mobilitas, jalan juga memiliki peran dalam menunjang aktivitas 
 
 Jalan Arrisalah dicatat sebagai salah satu titik fasilitas umum dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC027,"MASJID AL IKHLAS","Keagamaan","RW007",-0.825885,100.359699,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Al Ikhlas merupakan fasilitas keagamaan yang berada di wilayah RW 07. Masjid ini digunakan masyarakat sebagai tempat pelaksanaan ibadah dan kegiatan keagamaan.
+FAC027,"MASJID AL IKHLAS","religious","RW007",-0.825885,100.359699,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Al Ikhlas merupakan fasilitas keagamaan yang berada di wilayah RW 07. Masjid ini digunakan masyarakat sebagai tempat pelaksanaan ibadah dan kegiatan keagamaan.
 
 Kegiatan di masjid dapat meliputi shalat berjamaah, pengajian, pembelajaran agama, serta kegiatan keagamaan lainnya. Fasilitas ini menjadi bagian dari sarana pendukung kehidupan keagamaan masyarakat.
 
@@ -216,7 +216,7 @@ Selain fungsi ibadah, masjid dapat menjadi tempat interaksi sosial dan silaturah
 
 Masjid Al Ikhlas menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC028,"PAUD AL IKHLAS","Pendidikan","RW007",-0.825841,100.359664,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","PAUD Al Ikhlas merupakan fasilitas pendidikan anak usia dini yang berada di wilayah RW 07. Fasilitas ini mendukung akses pendidikan bagi anak-anak di lingkungan masyarakat sekitar.
+FAC028,"PAUD AL IKHLAS","education","RW007",-0.825841,100.359664,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","PAUD Al Ikhlas merupakan fasilitas pendidikan anak usia dini yang berada di wilayah RW 07. Fasilitas ini mendukung akses pendidikan bagi anak-anak di lingkungan masyarakat sekitar.
 
 Kegiatan pendidikan anak usia dini berfokus pada proses pembelajaran dan pengembangan kemampuan dasar anak. Lingkungan PAUD menjadi salah satu tempat untuk mendukung perkembangan sosial, kognitif, dan karakter anak.
 
@@ -224,7 +224,7 @@ Keberadaan PAUD turut membantu masyarakat memperoleh fasilitas pendidikan pada j
 
 PAUD Al Ikhlas menjadi salah satu titik fasilitas pendidikan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC029,"LUBUK TONGGA","Wisata & Alam","RW008",-0.813071,100.36777,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lubuk Tongga merupakan salah satu potensi wisata alam yang berada di wilayah RW 08 Kelurahan Balai Gadang. Kawasan ini memiliki daya tarik berupa lingkungan alami dan suasana yang mendukung aktivitas rekreasi.
+FAC029,"LUBUK TONGGA","tourism","RW008",-0.813071,100.36777,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lubuk Tongga merupakan salah satu potensi wisata alam yang berada di wilayah RW 08 Kelurahan Balai Gadang. Kawasan ini memiliki daya tarik berupa lingkungan alami dan suasana yang mendukung aktivitas rekreasi.
 
 Lokasi ini dikenal sebagai salah satu kawasan pemandian dan wisata berbasis alam. Lingkungan sekitar dapat memberikan pengalaman rekreasi yang berbeda dari kawasan perkotaan.
 
@@ -232,7 +232,7 @@ Potensi Lubuk Tongga juga dapat mendukung pengembangan wisata lokal apabila dike
 
 Lubuk Tongga menjadi salah satu titik wisata dan alam yang ditampilkan dalam pemetaan potensi wilayah Kelurahan Balai Gadang.","","",""
 
-FAC030,"MASJID AL AHQAF","Keagamaan","RW008",-0.815889,100.366171,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Al Ahqaf merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini menjadi sarana ibadah bagi masyarakat yang tinggal di lingkungan sekitarnya.
+FAC030,"MASJID AL AHQAF","religious","RW008",-0.815889,100.366171,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Al Ahqaf merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini menjadi sarana ibadah bagi masyarakat yang tinggal di lingkungan sekitarnya.
 
 Selain pelaksanaan ibadah rutin, masjid dapat digunakan untuk kegiatan keagamaan seperti pengajian, pembelajaran agama, dan kegiatan sosial. Aktivitas tersebut dapat diselenggarakan sesuai dengan kebutuhan masyarakat.
 
@@ -240,7 +240,7 @@ Masjid juga berfungsi sebagai ruang interaksi dan silaturahmi antarwarga. Kegiat
 
 Masjid Al Ahqaf dicatat sebagai salah satu fasilitas keagamaan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC031,"MASJID BAITUL HIDAYAH","Keagamaan","RW008",-0.8291857,100.3668163,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Baitul Hidayah merupakan fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini digunakan oleh masyarakat untuk melaksanakan ibadah dan kegiatan keagamaan.
+FAC031,"MASJID BAITUL HIDAYAH","religious","RW008",-0.8291857,100.3668163,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Baitul Hidayah merupakan fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini digunakan oleh masyarakat untuk melaksanakan ibadah dan kegiatan keagamaan.
 
 Kegiatan yang dapat berlangsung meliputi shalat berjamaah, pengajian, pembelajaran agama, dan kegiatan keagamaan masyarakat. Masjid menjadi salah satu sarana pendukung pembinaan kehidupan keagamaan warga.
 
@@ -248,7 +248,7 @@ Selain fungsi ibadah, keberadaan masjid dapat mendukung hubungan sosial masyarak
 
 Masjid Baitul Hidayah menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC032,"MASJID NURUL IHSAN","Keagamaan","RW008",-0.821087,100.359003,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurul Ihsan merupakan fasilitas keagamaan yang berada di wilayah RW 08. Keberadaannya mendukung kebutuhan masyarakat terhadap sarana ibadah di lingkungan sekitar.
+FAC032,"MASJID NURUL IHSAN","religious","RW008",-0.821087,100.359003,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurul Ihsan merupakan fasilitas keagamaan yang berada di wilayah RW 08. Keberadaannya mendukung kebutuhan masyarakat terhadap sarana ibadah di lingkungan sekitar.
 
 Masjid digunakan untuk pelaksanaan shalat dan berbagai aktivitas keagamaan. Kegiatan pengajian, pembelajaran agama, maupun kegiatan sosial dapat dilaksanakan sesuai dengan kebutuhan masyarakat.
 
@@ -256,7 +256,7 @@ Masjid juga dapat menjadi tempat berkumpul dan berinteraksi bagi warga. Aktivita
 
 Masjid Nurul Ihsan menjadi salah satu fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC033,"MUSHALLA DARUL ULUM","Keagamaan","RW008",-0.8247907,100.3611086,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Darul Ulum merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 08. Mushalla ini mendukung kebutuhan peribadatan masyarakat di lingkungan sekitar.
+FAC033,"MUSHALLA DARUL ULUM","religious","RW008",-0.8247907,100.3611086,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Darul Ulum merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 08. Mushalla ini mendukung kebutuhan peribadatan masyarakat di lingkungan sekitar.
 
 Selain kegiatan shalat, mushalla dapat dimanfaatkan untuk pembelajaran agama dan berbagai kegiatan keagamaan. Lingkungan mushalla dapat menjadi bagian dari kegiatan pembinaan masyarakat.
 
@@ -264,7 +264,7 @@ Keberadaan fasilitas ini membantu menyediakan sarana ibadah yang dekat dengan li
 
 Mushalla Darul Ulum menjadi salah satu titik fasilitas keagamaan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC034,"POSYANDU BERINGIN 12","Kesehatan","RW008",-0.82159,100.359592,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Posyandu Beringin 12 merupakan fasilitas kesehatan masyarakat yang berada di wilayah RW 08. Fasilitas ini mendukung pelayanan kesehatan dasar di tingkat lingkungan masyarakat.
+FAC034,"POSYANDU BERINGIN 12","health","RW008",-0.82159,100.359592,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Posyandu Beringin 12 merupakan fasilitas kesehatan masyarakat yang berada di wilayah RW 08. Fasilitas ini mendukung pelayanan kesehatan dasar di tingkat lingkungan masyarakat.
 
 Kegiatan posyandu dapat mencakup pemantauan kesehatan ibu dan anak serta kegiatan kesehatan masyarakat lainnya. Pelayanan tersebut menjadi bagian dari upaya menjaga kesehatan masyarakat secara preventif.
 
@@ -272,7 +272,7 @@ Keberadaan posyandu juga membantu masyarakat memperoleh akses terhadap kegiatan 
 
 Posyandu Beringin 12 menjadi salah satu titik fasilitas kesehatan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC035,"SDN No. 21 SUNGAI BANGEK","Pendidikan","RW008",-0.826011,100.359724,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","SDN No. 21 Sungai Bangek merupakan fasilitas pendidikan dasar yang berada di wilayah RW 08. Sekolah ini menjadi salah satu sarana pendidikan bagi anak-anak di wilayah sekitar.
+FAC035,"SDN No. 21 SUNGAI BANGEK","education","RW008",-0.826011,100.359724,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","SDN No. 21 Sungai Bangek merupakan fasilitas pendidikan dasar yang berada di wilayah RW 08. Sekolah ini menjadi salah satu sarana pendidikan bagi anak-anak di wilayah sekitar.
 
 Kegiatan pendidikan mencakup proses pembelajaran dan pengembangan kemampuan peserta didik. Lingkungan sekolah mendukung proses pendidikan formal serta pembentukan karakter anak.
 
@@ -280,7 +280,7 @@ Keberadaan sekolah turut membantu menyediakan akses pendidikan dasar bagi masyar
 
 SDN No. 21 Sungai Bangek dicatat sebagai salah satu titik fasilitas pendidikan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC036,"BIDAN ARRISALAH","Kesehatan","RW009",-0.829851,100.39131,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Bidan Arrisalah merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Fasilitas ini mendukung kebutuhan masyarakat terhadap layanan kesehatan, khususnya pelayanan yang berkaitan dengan kebidanan.
+FAC036,"BIDAN ARRISALAH","health","RW009",-0.829851,100.39131,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Bidan Arrisalah merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Fasilitas ini mendukung kebutuhan masyarakat terhadap layanan kesehatan, khususnya pelayanan yang berkaitan dengan kebidanan.
 
 Pelayanan kebidanan dapat membantu masyarakat memperoleh akses terhadap layanan kesehatan ibu dan anak. Keberadaan layanan pada tingkat lingkungan dapat mempermudah masyarakat dalam memperoleh pelayanan yang dibutuhkan.
 
@@ -288,7 +288,7 @@ Fasilitas kesehatan seperti ini juga memiliki peran dalam mendukung peningkatan 
 
 Bidan Arrisalah menjadi salah satu titik fasilitas kesehatan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC037,"KOLAM PEMANDIAN ULU AIA","Wisata & Alam","RW009",-0.799677,100.414956,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kolam Pemandian Ulu Aia merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini menawarkan aktivitas rekreasi berbasis air dengan suasana lingkungan yang alami.
+FAC037,"KOLAM PEMANDIAN ULU AIA","tourism","RW009",-0.799677,100.414956,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kolam Pemandian Ulu Aia merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini menawarkan aktivitas rekreasi berbasis air dengan suasana lingkungan yang alami.
 
 Pemandian dapat dimanfaatkan masyarakat maupun pengunjung sebagai tempat bersantai dan menikmati suasana alam. Keberadaan kawasan air menjadi salah satu daya tarik yang dapat mendukung aktivitas wisata lokal.
 
@@ -296,7 +296,7 @@ Potensi wisata ini juga dapat memberikan peluang bagi masyarakat sekitar apabila
 
 Kolam Pemandian Ulu Aia menjadi salah satu titik wisata dan alam yang ditampilkan dalam pemetaan potensi Kelurahan Balai Gadang.","","",""
 
-FAC038,"LAPANGAN SERBAGUNA AR RISALAH","Olahraga","RW009",-0.829947,100.38982,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lapangan Serbaguna Ar Risalah merupakan fasilitas olahraga dan ruang terbuka yang berada di wilayah RW 09. Fasilitas ini dapat digunakan masyarakat untuk berbagai aktivitas fisik dan olahraga.
+FAC038,"LAPANGAN SERBAGUNA AR RISALAH","sports","RW009",-0.829947,100.38982,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lapangan Serbaguna Ar Risalah merupakan fasilitas olahraga dan ruang terbuka yang berada di wilayah RW 09. Fasilitas ini dapat digunakan masyarakat untuk berbagai aktivitas fisik dan olahraga.
 
 Lapangan dapat dimanfaatkan untuk kegiatan olahraga, permainan, serta aktivitas yang melibatkan masyarakat. Penggunaan ruang terbuka dapat disesuaikan dengan kebutuhan warga dan kegiatan lingkungan.
 
@@ -304,7 +304,7 @@ Selain sebagai fasilitas olahraga, lapangan juga dapat mendukung aktivitas kepem
 
 Lapangan Serbaguna Ar Risalah dicatat sebagai salah satu fasilitas olahraga dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC039,"NGUNGUN SAOK","Wisata & Alam","RW009",-0.80409,100.44072,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Ngungun Saok merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki karakter lingkungan alami yang menjadi daya tarik bagi aktivitas rekreasi luar ruangan.
+FAC039,"NGUNGUN SAOK","tourism","RW009",-0.80409,100.44072,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Ngungun Saok merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki karakter lingkungan alami yang menjadi daya tarik bagi aktivitas rekreasi luar ruangan.
 
 Bentang alam dan suasana hijau di kawasan tersebut dapat menjadi bagian dari pengalaman wisata berbasis alam. Lokasi ini dapat dimanfaatkan untuk menikmati pemandangan dan suasana lingkungan yang relatif alami.
 
@@ -312,7 +312,7 @@ Potensi wisata Ngungun Saok dapat mendukung pengembangan wisata lokal dengan tet
 
 Ngungun Saok menjadi salah satu titik wisata dan alam yang dicatat dalam pemetaan potensi Kelurahan Balai Gadang.","","",""
 
-FAC040,"NGUNGUN TARAK","Wisata & Alam","RW009",-0.793679,100.445438,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Ngungun Tarak merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki suasana alami dan daya tarik berupa lingkungan air serta bentang alam di sekitarnya.
+FAC040,"NGUNGUN TARAK","tourism","RW009",-0.793679,100.445438,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Ngungun Tarak merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki suasana alami dan daya tarik berupa lingkungan air serta bentang alam di sekitarnya.
 
 Lokasi tersebut dapat menjadi pilihan rekreasi bagi masyarakat maupun pengunjung yang ingin menikmati lingkungan alam. Aktivitas wisata dapat dilakukan dengan tetap memperhatikan kondisi kawasan dan keselamatan pengunjung.
 
@@ -320,7 +320,7 @@ Pengembangan potensi wisata Ngungun Tarak dapat memberikan peluang bagi pengenal
 
 Ngungun Tarak menjadi salah satu titik wisata dan alam yang ditampilkan dalam pemetaan potensi Kelurahan Balai Gadang.","","",""
 
-FAC041,"PANCURAN 7","Wisata & Alam","RW009",-0.795122,100.418923,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Pancuran 7 merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki daya tarik berupa sumber air dan lingkungan alami yang dapat mendukung aktivitas rekreasi.
+FAC041,"PANCURAN 7","tourism","RW009",-0.795122,100.418923,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Pancuran 7 merupakan salah satu potensi wisata alam yang berada di wilayah RW 09. Kawasan ini memiliki daya tarik berupa sumber air dan lingkungan alami yang dapat mendukung aktivitas rekreasi.
 
 Keberadaan sumber air menjadi salah satu karakter yang dapat menarik masyarakat untuk mengunjungi kawasan tersebut. Lingkungan sekitar juga dapat menjadi bagian dari pengalaman wisata berbasis alam.
 
@@ -328,7 +328,7 @@ Potensi Pancuran 7 dapat dikembangkan sebagai bagian dari pengenalan wisata loka
 
 Pancuran 7 menjadi salah satu titik wisata dan alam yang dicatat dalam pemetaan potensi wilayah Kelurahan Balai Gadang.","","",""
 
-FAC042,"RUMAH QUR'AN DARUL ILMI","Keagamaan","RW009",-0.836726,100.380141,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah Qur'an Darul Ilmi merupakan fasilitas keagamaan dan pendidikan yang berada di wilayah RW 09. Fasilitas ini mendukung kegiatan pembelajaran Al-Qur'an dan pembinaan keagamaan masyarakat.
+FAC042,"RUMAH QUR'AN DARUL ILMI","religious","RW009",-0.836726,100.380141,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Rumah Qur'an Darul Ilmi merupakan fasilitas keagamaan dan pendidikan yang berada di wilayah RW 09. Fasilitas ini mendukung kegiatan pembelajaran Al-Qur'an dan pembinaan keagamaan masyarakat.
 
 Kegiatan pembelajaran dapat menjadi sarana untuk meningkatkan pemahaman keagamaan, khususnya bagi anak-anak dan masyarakat sekitar. Rumah Qur'an dapat mendukung proses pendidikan agama di luar pendidikan formal.
 
@@ -336,7 +336,7 @@ Keberadaan fasilitas ini juga dapat menjadi ruang pembinaan generasi muda melalu
 
 Rumah Qur'an Darul Ilmi menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC043,"SEKOLAH AR RISALAH","Pendidikan","RW009",-0.8320437,100.393611,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Sekolah Ar Risalah merupakan salah satu fasilitas pendidikan yang berada di wilayah RW 09. Fasilitas ini mendukung penyelenggaraan kegiatan pendidikan bagi peserta didik di lingkungan sekitar.
+FAC043,"SEKOLAH AR RISALAH","education","RW009",-0.8320437,100.393611,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Sekolah Ar Risalah merupakan salah satu fasilitas pendidikan yang berada di wilayah RW 09. Fasilitas ini mendukung penyelenggaraan kegiatan pendidikan bagi peserta didik di lingkungan sekitar.
 
 Kegiatan sekolah meliputi proses pembelajaran, pengembangan kemampuan peserta didik, dan pembentukan karakter. Lingkungan pendidikan menjadi bagian penting dalam mendukung perkembangan generasi muda.
 
@@ -344,7 +344,7 @@ Keberadaan sekolah turut memperkuat ketersediaan sarana pendidikan di Kelurahan 
 
 Sekolah Ar Risalah menjadi salah satu titik fasilitas pendidikan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC044,"STEI AR RISALAH","Pendidikan","RW009",-0.833203,100.392748,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","STEI Ar Risalah merupakan fasilitas pendidikan tinggi yang berada di wilayah RW 09. Keberadaannya menjadi bagian dari sarana pendidikan yang mendukung pengembangan sumber daya manusia.
+FAC044,"STEI AR RISALAH","education","RW009",-0.833203,100.392748,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","STEI Ar Risalah merupakan fasilitas pendidikan tinggi yang berada di wilayah RW 09. Keberadaannya menjadi bagian dari sarana pendidikan yang mendukung pengembangan sumber daya manusia.
 
 Kegiatan pendidikan tinggi mencakup proses pembelajaran, pengembangan pengetahuan, dan peningkatan kompetensi mahasiswa. Lingkungan perguruan tinggi juga dapat menjadi ruang pengembangan kegiatan akademik dan kemasyarakatan.
 
@@ -352,7 +352,7 @@ Keberadaan fasilitas pendidikan tinggi memberikan tambahan pilihan akses pendidi
 
 STEI Ar Risalah dicatat sebagai salah satu titik fasilitas pendidikan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC045,"KOLAM RENANG ABG","Wisata & Alam","RW009",-0.826503,100.396343,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kolam Renang ABG merupakan fasilitas rekreasi air yang berada di wilayah RW 09. Fasilitas ini menjadi salah satu pilihan masyarakat untuk melakukan aktivitas rekreasi dan olahraga air.
+FAC045,"KOLAM RENANG ABG","tourism","RW009",-0.826503,100.396343,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kolam Renang ABG merupakan fasilitas rekreasi air yang berada di wilayah RW 09. Fasilitas ini menjadi salah satu pilihan masyarakat untuk melakukan aktivitas rekreasi dan olahraga air.
 
 Kolam renang dapat dimanfaatkan untuk berenang, bermain air, dan kegiatan rekreasi keluarga. Keberadaan fasilitas rekreasi seperti ini memberikan alternatif aktivitas di luar ruang bagi masyarakat.
 
@@ -360,7 +360,7 @@ Selain sebagai tempat rekreasi, fasilitas ini dapat mendukung aktivitas olahraga
 
 Kolam Renang ABG menjadi salah satu titik wisata dan alam yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC046,"MASJID JABAL NUR","Keagamaan","RW009",-0.832983,100.392034,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Jabal Nur merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini menjadi sarana ibadah masyarakat di lingkungan sekitar.
+FAC046,"MASJID JABAL NUR","religious","RW009",-0.832983,100.392034,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Jabal Nur merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini menjadi sarana ibadah masyarakat di lingkungan sekitar.
 
 Kegiatan di masjid dapat meliputi shalat berjamaah, pengajian, pembelajaran agama, dan aktivitas keagamaan lainnya. Fasilitas ini mendukung kehidupan keagamaan masyarakat setempat.
 
@@ -368,7 +368,7 @@ Selain fungsi ibadah, masjid dapat menjadi tempat silaturahmi dan interaksi sosi
 
 Masjid Jabal Nur menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC047,"KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT","Pemerintahan","RW009",-0.826652,100.395331,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kementerian Pekerjaan Umum dan Perumahan Rakyat merupakan instansi pemerintahan yang tercatat berada di wilayah RW 09. Keberadaannya berkaitan dengan aktivitas pemerintahan dalam bidang pekerjaan umum dan perumahan.
+FAC047,"KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT","government","RW009",-0.826652,100.395331,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kementerian Pekerjaan Umum dan Perumahan Rakyat merupakan instansi pemerintahan yang tercatat berada di wilayah RW 09. Keberadaannya berkaitan dengan aktivitas pemerintahan dalam bidang pekerjaan umum dan perumahan.
 
 Instansi pemerintah memiliki fungsi yang berkaitan dengan penyelenggaraan urusan pemerintahan sesuai dengan bidang tugasnya. Keberadaan fasilitas atau kantor pemerintahan menjadi bagian dari struktur pelayanan dan aktivitas pemerintahan di suatu wilayah.
 
@@ -376,7 +376,7 @@ Lokasi instansi juga menjadi salah satu informasi penting dalam pemetaan fasilit
 
 Kementerian Pekerjaan Umum dan Perumahan Rakyat dicatat sebagai salah satu titik fasilitas pemerintahan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC048,"TK SAYANG IBU","Pendidikan","RW009",-0.836651,100.382215,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","TK Sayang Ibu merupakan fasilitas pendidikan anak usia dini yang berada di wilayah RW 09. Fasilitas ini mendukung proses pendidikan dan perkembangan anak pada tahap awal.
+FAC048,"TK SAYANG IBU","education","RW009",-0.836651,100.382215,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","TK Sayang Ibu merupakan fasilitas pendidikan anak usia dini yang berada di wilayah RW 09. Fasilitas ini mendukung proses pendidikan dan perkembangan anak pada tahap awal.
 
 Kegiatan pendidikan anak usia dini membantu memberikan dasar pembelajaran serta mendukung perkembangan kemampuan anak. Lingkungan sekolah juga dapat menjadi tempat pembentukan karakter dan kemampuan sosial.
 
@@ -384,7 +384,7 @@ Keberadaan TK membantu menyediakan akses pendidikan yang lebih dekat dengan masy
 
 TK Sayang Ibu menjadi salah satu titik fasilitas pendidikan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC049,"YAYASAN WAQAF AR RISSALAH","Pendidikan","RW009",-0.831482,100.393127,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Yayasan Waqaf Ar Rissalah merupakan lembaga yang berkaitan dengan kegiatan pendidikan dan sosial kemasyarakatan di wilayah RW 09. Keberadaannya menjadi bagian dari potensi kelembagaan masyarakat di bidang pendidikan.
+FAC049,"YAYASAN WAQAF AR RISSALAH","education","RW009",-0.831482,100.393127,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Yayasan Waqaf Ar Rissalah merupakan lembaga yang berkaitan dengan kegiatan pendidikan dan sosial kemasyarakatan di wilayah RW 09. Keberadaannya menjadi bagian dari potensi kelembagaan masyarakat di bidang pendidikan.
 
 Kegiatan yayasan dapat mendukung penyelenggaraan pendidikan dan pembinaan masyarakat. Peran lembaga seperti ini dapat membantu menyediakan sarana pengembangan pendidikan bagi masyarakat.
 
@@ -392,7 +392,7 @@ Selain bidang pendidikan, keberadaan yayasan juga dapat mendukung kegiatan sosia
 
 Yayasan Waqaf Ar Rissalah dicatat sebagai salah satu titik fasilitas pendidikan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC050,"MUSHALLA TAMPAT BATU SINGKA","Keagamaan","RW009",-0.836358,100.383349,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Tampat Batu Singka merupakan fasilitas ibadah yang berada di wilayah RW 09. Mushalla ini mendukung kebutuhan masyarakat dalam melaksanakan kegiatan peribadatan sehari-hari.
+FAC050,"MUSHALLA TAMPAT BATU SINGKA","religious","RW009",-0.836358,100.383349,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Tampat Batu Singka merupakan fasilitas ibadah yang berada di wilayah RW 09. Mushalla ini mendukung kebutuhan masyarakat dalam melaksanakan kegiatan peribadatan sehari-hari.
 
 Selain digunakan untuk shalat, fasilitas ini dapat dimanfaatkan untuk berbagai kegiatan keagamaan masyarakat. Lingkungan mushalla dapat menjadi tempat pembelajaran dan pembinaan keagamaan.
 
@@ -400,7 +400,7 @@ Keberadaan mushalla juga dapat mendukung interaksi sosial masyarakat di lingkung
 
 Mushalla Tampat Batu Singka menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC051,"SDN 30 AIR DINGIN","Pendidikan","RW010",-0.836626,100.380458,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","SDN 30 Air Dingin merupakan fasilitas pendidikan dasar yang berada di wilayah RW 10. Sekolah ini menjadi salah satu sarana pendidikan yang mendukung pembelajaran anak-anak di wilayah sekitar.
+FAC051,"SDN 30 AIR DINGIN","education","RW010",-0.836626,100.380458,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","SDN 30 Air Dingin merupakan fasilitas pendidikan dasar yang berada di wilayah RW 10. Sekolah ini menjadi salah satu sarana pendidikan yang mendukung pembelajaran anak-anak di wilayah sekitar.
 
 Kegiatan pendidikan mencakup proses pembelajaran dan pengembangan kemampuan peserta didik. Sekolah juga berperan dalam mendukung pembentukan karakter dan keterampilan dasar siswa.
 
@@ -408,7 +408,7 @@ Keberadaan sekolah membantu menyediakan akses pendidikan dasar bagi masyarakat. 
 
 SDN 30 Air Dingin menjadi salah satu titik fasilitas pendidikan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC052,"APOTEK ANDIEN FARMA","Kesehatan","RW009",-0.836895,100.378389,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Apotek Andien Farma merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Apotek menyediakan kebutuhan obat dan berbagai produk yang berkaitan dengan kesehatan masyarakat.
+FAC052,"APOTEK ANDIEN FARMA","health","RW009",-0.836895,100.378389,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Apotek Andien Farma merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Apotek menyediakan kebutuhan obat dan berbagai produk yang berkaitan dengan kesehatan masyarakat.
 
 Keberadaan apotek membantu masyarakat memperoleh akses terhadap kebutuhan farmasi di lingkungan sekitar. Fasilitas ini dapat menjadi salah satu pendukung pelayanan kesehatan setelah masyarakat memperoleh rekomendasi atau resep sesuai kebutuhan.
 
@@ -416,7 +416,7 @@ Apotek juga menjadi bagian dari jaringan fasilitas kesehatan yang mendukung akti
 
 Apotek Andien Farma dicatat sebagai salah satu titik fasilitas kesehatan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC053,"UPTD PUSKESMAS AIR DINGIN","Kesehatan","RW009",-0.837219,100.378524,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","UPTD Puskesmas Air Dingin merupakan fasilitas pelayanan kesehatan masyarakat yang berada di wilayah RW 09. Puskesmas menjadi salah satu sarana penting dalam mendukung pelayanan kesehatan dasar masyarakat.
+FAC053,"UPTD PUSKESMAS AIR DINGIN","health","RW009",-0.837219,100.378524,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","UPTD Puskesmas Air Dingin merupakan fasilitas pelayanan kesehatan masyarakat yang berada di wilayah RW 09. Puskesmas menjadi salah satu sarana penting dalam mendukung pelayanan kesehatan dasar masyarakat.
 
 Pelayanan puskesmas mencakup berbagai kegiatan kesehatan sesuai dengan layanan yang tersedia. Selain pelayanan pengobatan, puskesmas juga berperan dalam kegiatan promotif dan preventif bagi masyarakat.
 
@@ -424,7 +424,7 @@ Keberadaan puskesmas membantu masyarakat memperoleh akses terhadap pelayanan kes
 
 UPTD Puskesmas Air Dingin menjadi salah satu titik fasilitas kesehatan utama yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC054,"MASJID JAMI' NURUL YAQIN","Keagamaan","RW009",-0.835822,100.374456,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Jami' Nurul Yaqin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini digunakan masyarakat sebagai tempat ibadah dan kegiatan keagamaan.
+FAC054,"MASJID JAMI' NURUL YAQIN","religious","RW009",-0.835822,100.374456,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Jami' Nurul Yaqin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini digunakan masyarakat sebagai tempat ibadah dan kegiatan keagamaan.
 
 Selain shalat berjamaah, masjid dapat menjadi tempat pelaksanaan pengajian, pembelajaran agama, dan kegiatan keagamaan lainnya. Aktivitas tersebut mendukung pembinaan kehidupan keagamaan masyarakat.
 
@@ -432,7 +432,7 @@ Masjid juga memiliki fungsi sosial sebagai ruang berkumpul dan bersilaturahmi. K
 
 Masjid Jami' Nurul Yaqin menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan Kelurahan Balai Gadang.","","",""
 
-FAC055,"APOTEK MEDIKA MANDIRI","Kesehatan","RW009",-0.835634,100.372831,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Apotek Medika Mandiri merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Fasilitas ini menyediakan berbagai kebutuhan obat dan produk kesehatan bagi masyarakat.
+FAC055,"APOTEK MEDIKA MANDIRI","health","RW009",-0.835634,100.372831,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Apotek Medika Mandiri merupakan fasilitas pelayanan kesehatan yang berada di wilayah RW 09. Fasilitas ini menyediakan berbagai kebutuhan obat dan produk kesehatan bagi masyarakat.
 
 Keberadaan apotek membantu masyarakat memperoleh kebutuhan farmasi yang diperlukan. Apotek juga menjadi bagian dari fasilitas pendukung dalam sistem pelayanan kesehatan di lingkungan masyarakat.
 
@@ -440,7 +440,7 @@ Akses terhadap fasilitas kesehatan yang berada dekat dengan permukiman dapat mem
 
 Apotek Medika Mandiri menjadi salah satu titik fasilitas kesehatan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC056,"MUSHALLA AL-FAIZIN","Keagamaan","RW010",-0.835297,100.372855,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Al-Faizin merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 10. Mushalla ini mendukung kebutuhan peribadatan warga di lingkungan sekitar.
+FAC056,"MUSHALLA AL-FAIZIN","religious","RW010",-0.835297,100.372855,"RW 10, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Al-Faizin merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 10. Mushalla ini mendukung kebutuhan peribadatan warga di lingkungan sekitar.
 
 Fasilitas ini dapat digunakan untuk shalat dan berbagai aktivitas keagamaan. Kegiatan pembelajaran agama dan pembinaan masyarakat juga dapat dilaksanakan sesuai dengan kebutuhan lingkungan.
 
@@ -448,7 +448,7 @@ Mushalla dapat menjadi salah satu ruang interaksi masyarakat yang mendukung sila
 
 Mushalla Al-Faizin menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC057,"MASJID MUJAHIDDIN","Keagamaan","RW009",-0.837396,100.371293,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Mujahiddin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini mendukung kebutuhan masyarakat dalam melaksanakan ibadah.
+FAC057,"MASJID MUJAHIDDIN","religious","RW009",-0.837396,100.371293,"RW 09, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Mujahiddin merupakan salah satu fasilitas keagamaan yang berada di wilayah RW 09. Masjid ini mendukung kebutuhan masyarakat dalam melaksanakan ibadah.
 
 Selain kegiatan ibadah rutin, masjid dapat digunakan untuk pengajian, pembelajaran agama, dan berbagai kegiatan keagamaan lainnya. Aktivitas tersebut menjadi bagian dari pembinaan masyarakat.
 
@@ -456,7 +456,7 @@ Masjid juga dapat menjadi tempat berkumpul dan bersilaturahmi bagi warga. Kegiat
 
 Masjid Mujahiddin menjadi salah satu titik fasilitas keagamaan yang ditampilkan dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC058,"BUDIDAYA LEBAH MADU GALO GALO","UMKM / Ekonomi","RW008",-0.835354,100.372836,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Budidaya Lebah Madu Galo Galo merupakan salah satu potensi ekonomi masyarakat yang berada di wilayah RW 08. Kegiatan ini bergerak dalam bidang budidaya lebah dan menghasilkan produk madu sebagai salah satu komoditas usaha.
+FAC058,"BUDIDAYA LEBAH MADU GALO GALO","umkm","RW008",-0.835354,100.372836,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Budidaya Lebah Madu Galo Galo merupakan salah satu potensi ekonomi masyarakat yang berada di wilayah RW 08. Kegiatan ini bergerak dalam bidang budidaya lebah dan menghasilkan produk madu sebagai salah satu komoditas usaha.
 
 Budidaya lebah madu memiliki potensi untuk dikembangkan sebagai usaha berbasis sumber daya alam. Kegiatan tersebut dapat memberikan nilai tambah melalui pengelolaan hasil budidaya menjadi produk yang memiliki nilai ekonomi.
 
@@ -464,7 +464,7 @@ Selain mendukung kegiatan ekonomi masyarakat, budidaya lebah juga berkaitan deng
 
 Budidaya Lebah Madu Galo Galo menjadi salah satu titik UMKM dan ekonomi yang dicatat dalam pemetaan potensi wilayah Kelurahan Balai Gadang.","","",""
 
-FAC059,"MASJID BAITUL HIDAYAH","Keagamaan","RW008",-0.827289,100.364827,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Baitul Hidayah merupakan fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini menjadi salah satu tempat ibadah yang digunakan masyarakat di lingkungan sekitar.
+FAC059,"MASJID BAITUL HIDAYAH","religious","RW008",-0.827289,100.364827,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Baitul Hidayah merupakan fasilitas keagamaan yang berada di wilayah RW 08. Masjid ini menjadi salah satu tempat ibadah yang digunakan masyarakat di lingkungan sekitar.
 
 Kegiatan di masjid dapat mencakup shalat berjamaah, pengajian, pembelajaran agama, serta kegiatan keagamaan lainnya. Fasilitas ini mendukung aktivitas pembinaan masyarakat dalam bidang keagamaan.
 
@@ -472,15 +472,15 @@ Selain sebagai tempat ibadah, masjid dapat menjadi ruang interaksi sosial dan si
 
 Masjid Baitul Hidayah menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC060,"MUSHOLLA BAITUL HADI","Keagamaan","RW006",-0.82701,100.36441,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Musholla Baitul Hadi merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 06. Mushalla ini mendukung kebutuhan peribadatan masyarakat di lingkungan sekitar.
+FAC060,"MUSHALLA BAITUL HADI","religious","RW006",-0.82701,100.36441,"RW 06, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla Baitul Hadi merupakan fasilitas ibadah masyarakat yang berada di wilayah RW 06. Mushalla ini mendukung kebutuhan peribadatan masyarakat di lingkungan sekitar.
 
 Selain kegiatan shalat, mushalla dapat dimanfaatkan untuk kegiatan keagamaan dan pembinaan masyarakat. Fasilitas ini dapat menjadi ruang pelaksanaan aktivitas keagamaan yang sesuai dengan kebutuhan warga.
 
 Keberadaan mushalla membantu menyediakan sarana ibadah yang dekat dengan lingkungan masyarakat. Mushalla juga dapat mendukung interaksi dan silaturahmi antarwarga melalui kegiatan bersama.
 
-Musholla Baitul Hadi menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
+Mushalla Baitul Hadi menjadi salah satu titik fasilitas keagamaan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC061,"YAYASAN RAUDHATUL ATHFAL NURUS SHOLIHIN","Pendidikan","RW007",-0.829458,100.356116,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Yayasan Raudhatul Athfal Nurus Sholihin merupakan lembaga pendidikan yang berada di wilayah RW 07. Fasilitas ini mendukung kegiatan pendidikan dan pembinaan anak usia dini di lingkungan masyarakat.
+FAC061,"YAYASAN RAUDHATUL ATHFAL NURUS SHOLIHIN","education","RW007",-0.829458,100.356116,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Yayasan Raudhatul Athfal Nurus Sholihin merupakan lembaga pendidikan yang berada di wilayah RW 07. Fasilitas ini mendukung kegiatan pendidikan dan pembinaan anak usia dini di lingkungan masyarakat.
 
 Kegiatan pendidikan pada jenjang tersebut membantu memberikan dasar pengetahuan dan pembentukan karakter anak. Lingkungan pendidikan juga mendukung perkembangan kemampuan sosial dan pembelajaran anak.
 
@@ -488,7 +488,7 @@ Keberadaan yayasan turut menyediakan sarana pendidikan yang dapat dimanfaatkan o
 
 Yayasan Raudhatul Athfal Nurus Sholihin menjadi salah satu titik fasilitas pendidikan yang dicatat dalam pemetaan wilayah Kelurahan Balai Gadang.","","",""
 
-FAC062,"MASJID NURUS SHOLIHIN","Keagamaan","RW007",-0.829435,100.356433,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurus Sholihin merupakan fasilitas keagamaan yang berada di wilayah RW 07. Masjid ini digunakan masyarakat untuk melaksanakan ibadah dan kegiatan keagamaan.
+FAC062,"MASJID NURUS SHOLIHIN","religious","RW007",-0.829435,100.356433,"RW 07, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid Nurus Sholihin merupakan fasilitas keagamaan yang berada di wilayah RW 07. Masjid ini digunakan masyarakat untuk melaksanakan ibadah dan kegiatan keagamaan.
 
 Selain kegiatan ibadah rutin, fasilitas ini dapat dimanfaatkan untuk pengajian, pembelajaran agama, dan kegiatan sosial. Aktivitas tersebut mendukung pembinaan masyarakat dalam bidang keagamaan.
 
@@ -504,3 +504,28 @@ Selain pembinaan generasi muda, kegiatan yang berkaitan dengan budaya dan ketera
 
 Perguruan Binuang Sati Latih Generasi Muda menjadi salah satu titik kategori kepemudaan yang dicatat dalam pemetaan potensi wilayah Kelurahan Balai Gadang.","","",""
 
+FAC064,"SDN 30 Air Dingin","education","RW011",-0.836672,100.380522,"RW 11, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Sekolah dasar yang menyediakan layanan pendidikan dasar bagi masyarakat di wilayah Air Dingin dan sekitarnya.","","",""
+FAC065,"PAUD / TK Sayang Ibu","education","RW011",-0.836600,100.382288,"RW 11, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lembaga pendidikan anak usia dini yang memberikan layanan pendidikan dan pembelajaran bagi anak-anak di lingkungan masyarakat sekitar.","","",""
+FAC066,"Masjid Baitussalam","religious","RW011",-0.837882,100.380027,"RW 11, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Tempat ibadah masyarakat yang digunakan untuk pelaksanaan shalat, kegiatan keagamaan, dan aktivitas sosial kemasyarakatan.","","",""
+FAC067,"Mushalla Ar Rahman","religious","RW011",-0.835648,100.381753,"RW 11, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla yang dimanfaatkan masyarakat sekitar sebagai tempat ibadah dan kegiatan keagamaan.","","",""
+FAC068,"Pemandian Wisata Alam Lumin","tourism","RW011",-0.838462,100.380515,"RW 11, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kawasan pemandian wisata alam yang dimanfaatkan sebagai tempat rekreasi dan aktivitas masyarakat dengan suasana lingkungan yang alami.","","",""
+FAC069,"SDN 04 Baringin","education","RW012",-0.838711,100.366076,"RW 12, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Sekolah dasar yang menyediakan layanan pendidikan dasar bagi masyarakat di wilayah Baringin dan sekitarnya.","","",""
+FAC070,"TK Ummi","education","RW012",-0.837098,100.368882,"RW 12, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lembaga pendidikan anak usia dini yang menyediakan layanan pendidikan dan pembelajaran bagi anak-anak di lingkungan sekitar.","","",""
+FAC071,"TK Aisyiyah Murni","education","RW012",-0.839852,100.365371,"RW 12, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lembaga pendidikan anak usia dini yang memberikan layanan pendidikan bagi anak-anak di wilayah masyarakat sekitar.","","",""
+FAC072,"Masjid Baitur Ridho","religious","RW012",-0.836928,100.367970,"RW 12, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Tempat ibadah masyarakat yang digunakan untuk pelaksanaan shalat, kegiatan keagamaan, serta aktivitas sosial kemasyarakatan.","","",""
+FAC073,"Pemandian Bendungan Lumin","tourism","RW012",-0.840212,100.367398,"RW 12, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kawasan rekreasi air yang dimanfaatkan masyarakat untuk mandi dan bersantai bersama keluarga serta memiliki potensi pengembangan wisata lokal.","","",""
+FAC074,"Masjid As-Sakinah","religious","RW013",-0.831057,100.375890,"RW 13, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Masjid umum yang menjadi tempat ibadah dan pusat kegiatan keagamaan bagi masyarakat di lingkungan sekitarnya.","","",""
+FAC075,"Puskesmas Air Dingin","health","RW014",-0.837322,100.378530,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Fasilitas pelayanan kesehatan yang menyediakan layanan kesehatan dasar bagi masyarakat di wilayah Air Dingin dan sekitarnya.","","",""
+FAC076,"Posyandu Air Dingin","health","RW014",-0.834778,100.375208,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Pos pelayanan terpadu yang mendukung pelayanan kesehatan masyarakat, khususnya pemantauan kesehatan ibu dan anak serta kegiatan kesehatan masyarakat.","","",""
+FAC077,"PAUD / TK Ar Raudhah Air Dingin","education","RW014",-0.834213,100.375852,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Lembaga pendidikan anak usia dini yang memberikan layanan pendidikan dan pembelajaran bagi anak-anak di wilayah Air Dingin dan sekitarnya.","","",""
+FAC078,"Mushalla Raudhatul Jannah","religious","RW014",-0.834979,100.375243,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Mushalla yang digunakan masyarakat sekitar sebagai tempat ibadah dan pelaksanaan kegiatan keagamaan.","","",""
+FAC079,"Masjid Muhajirin","religious","RW014",-0.835324,100.377757,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Tempat ibadah masyarakat yang digunakan untuk pelaksanaan shalat, kegiatan keagamaan, dan aktivitas sosial kemasyarakatan.","","",""
+FAC080,"Lapangan Badminton & Takraw","sports","RW014",-0.834835,100.375054,"RW 14, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Fasilitas olahraga masyarakat yang dapat digunakan untuk kegiatan badminton, sepak takraw, dan aktivitas olahraga warga.","","",""
+
+FAC081,"Kantor Lurah Balai Gadang","government","RW008",-0.8243121331720145, 100.36465738212931,"RW 08, Kelurahan Balai Gadang, Kecamatan Koto Tangah, Kota Padang","Kantor Lurah Balai Gadang merupakan pusat pelayanan administrasi dan pusat jalannya roda pemerintahan di tingkat kelurahan bagi warga setempat. Berlokasi di wilayah Kecamatan Koto Tangah, fasilitas publik ini hadir untuk memastikan segala kebutuhan surat-menyurat dan perizinan masyarakat dapat terlayani secara efisien dan tepat sasaran.
+
+Sebagai perpanjangan tangan dari pemerintah kota, kantor kelurahan ini memegang peranan kunci dalam mengoordinasikan berbagai program pembangunan lingkungan. Mulai dari pengelolaan data kependudukan, pendataan bantuan sosial, hingga penataan infrastruktur skala lokal, seluruhnya diintegrasikan melalui ruang kerja staf pemerintahan yang ada di sini.
+
+Selain urusan administratif, Kantor Lurah Balai Gadang juga berfungsi sebagai ruang interaksi dan konsolidasi sosial antarwarga. Area ini sering dimanfaatkan untuk memfasilitasi musyawarah warga, kegiatan pembinaan organisasi kemasyarakatan seperti PKK dan Karang Taruna, serta koordinasi lintas tingkat bersama pengurus RW dan RT di lingkungan setempat.
+
+Dengan fasilitas yang memadai dan lokasinya yang strategis, keberadaan kantor lurah ini menjadi pilar utama dalam menciptakan tata kelola lingkungan yang tertib, responsif, dan kondusif. Hal ini sekaligus memperkuat sinergi antara aspirasi warga dengan kebijakan pemerintah daerah demi kemajuan bersama di Kelurahan Balai Gadang.","","",""
