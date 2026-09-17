@@ -30,6 +30,11 @@ export const DetailSheet: React.FC<DetailSheetProps> = ({
 }) => {
   const [copiedLink, setCopiedLink] = useState(false);
   const [copiedCoords, setCopiedCoords] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  useEffect(() => {
+    setImgError(false);
+  }, [entity]);
 
   useEffect(() => {
     if (!entity) return;
@@ -41,7 +46,6 @@ export const DetailSheet: React.FC<DetailSheetProps> = ({
     };
 
     document.addEventListener("keydown", handleKeyDown);
-
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
@@ -54,32 +58,111 @@ export const DetailSheet: React.FC<DetailSheetProps> = ({
   if (!entity) return null;
 
   const isPotential = entity.type === "potential";
-
-  const badgeColor = category?.color || "#0284c7";
-  const badgeBg = category?.bgColor || "#e0f2fe";
-  const badgeText = category?.textColor || "#0369a1";
-
+  const badgeColor = category?.color || "#7E549E";
   const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${entity.latitude},${entity.longitude}`;
+
+  // ==========================================
+  // SMART FALLBACK IMAGE BERDASARKAN NAMA FASILITAS
+  // ==========================================
+  const getSmartFallbackImage = () => {
+    // Mengambil nama fasilitas (atau deskripsi sebagai cadangan) lalu diubah ke huruf kecil
+    const text = (entity.name || "").toLowerCase();
+
+    // Logika pencocokan berdasarkan nama fasilitas sesuai permintaan Anda
+    if (
+      text.includes("masjid") ||
+      text.includes("mushalla") ||
+      text.includes("mushola") ||
+      text.includes("surau") ||
+      text.includes("ibadah")
+    ) {
+      // Foto Tempat Ibadah yang aman & stabil
+      return "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Fasilitas Kesehatan
+    if (
+      text.includes("klinik") ||
+      text.includes("puskesmas") ||
+      text.includes("posyandu") ||
+      text.includes("dokter") ||
+      text.includes("sehat")
+    ) {
+      return "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Fasilitas Pendidikan / Sekolah / MDA
+    if (
+      text.includes("sekolah") ||
+      text.includes("paud") ||
+      text.includes("tk") ||
+      text.includes("sd") ||
+      text.includes("smp") ||
+      text.includes("sma") ||
+      text.includes("mda") ||
+      text.includes("tpa") ||
+      text.includes("pendidikan")
+    ) {
+      return "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Olahraga
+    if (
+      text.includes("lapangan") ||
+      text.includes("olahraga") ||
+      text.includes("futsal") ||
+      text.includes("bola")
+    ) {
+      return "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Kantor Pemerintahan / Kantor Lurah
+    if (
+      text.includes("kantor") ||
+      text.includes("lurah") ||
+      text.includes("pos") ||
+      text.includes("rw") ||
+      text.includes("rt")
+    ) {
+      return "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Potensi / UMKM / Pertanian
+    if (
+      isPotential ||
+      text.includes("tani") ||
+      text.includes("kebun") ||
+      text.includes("umkm") ||
+      text.includes("produk") ||
+      text.includes("warung") ||
+      text.includes("toko")
+    ) {
+      return "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80";
+    }
+
+    // Default Umum Fasilitas Publik
+    return "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80";
+  };
+
+  // Jika error saat memuat foto asli ATAU string foto kosong, gunakan fungsi fallback
+  const currentPhoto =
+    !imgError && entity.photo && entity.photo.trim() !== ""
+      ? entity.photo
+      : getSmartFallbackImage();
 
   const handleShareLink = async () => {
     try {
       const url = new URL(window.location.href);
-
       url.searchParams.delete("facility");
       url.searchParams.delete("potential");
-
       url.searchParams.set(
         entity.type === "facility" ? "facility" : "potential",
         entity.id,
       );
 
       await navigator.clipboard.writeText(url.toString());
-
       setCopiedLink(true);
-
-      window.setTimeout(() => {
-        setCopiedLink(false);
-      }, 2500);
+      window.setTimeout(() => setCopiedLink(false), 2500);
     } catch (error) {
       console.error("Gagal menyalin tautan:", error);
     }
@@ -88,14 +171,9 @@ export const DetailSheet: React.FC<DetailSheetProps> = ({
   const handleCopyCoords = async () => {
     try {
       const coordStr = `${entity.latitude.toFixed(6)}, ${entity.longitude.toFixed(6)}`;
-
       await navigator.clipboard.writeText(coordStr);
-
       setCopiedCoords(true);
-
-      window.setTimeout(() => {
-        setCopiedCoords(false);
-      }, 2000);
+      window.setTimeout(() => setCopiedCoords(false), 2000);
     } catch (error) {
       console.error("Gagal menyalin koordinat:", error);
     }
@@ -103,919 +181,244 @@ export const DetailSheet: React.FC<DetailSheetProps> = ({
 
   return (
     <div
-      id="entity-detail-backdrop"
-      className="
-        fixed inset-0 z-50
-        flex items-end justify-center
-        bg-slate-950/60
-        backdrop-blur-[2px]
-        animate-in fade-in duration-200
-
-        sm:items-center
-        sm:p-4
-
-        lg:p-6
-      "
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          onClose();
-        }
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-slate-950/70 backdrop-blur-xs animate-in fade-in duration-200 p-2 sm:p-4 lg:p-6"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
       }}
       role="dialog"
       aria-modal="true"
-      aria-labelledby="entity-detail-title"
     >
-      <div
-        id="entity-detail-container"
-        className="
-          relative
-          flex
-          w-full
-          flex-col
-          overflow-hidden
-          bg-white
-          shadow-2xl
-
-          max-h-[96dvh]
-          rounded-t-[1.75rem]
-
-          animate-in
-          slide-in-from-bottom-8
-          duration-300
-
-          sm:max-w-2xl
-          sm:max-h-[92dvh]
-          sm:rounded-2xl
-
-          md:max-w-3xl
-
-          lg:max-w-4xl
-          lg:max-h-[88dvh]
-
-          xl:max-w-5xl
-
-          border border-slate-200/80
-        "
-      >
-        {/* ================= HEADER / IMAGE ================= */}
-
-        <div
-          className="
-            relative
-            w-full
-            shrink-0
-            overflow-hidden
-            bg-slate-100
-
-            h-[180px]
-
-            xs:h-[200px]
-
-            sm:h-[220px]
-
-            md:h-[250px]
-
-            lg:h-[280px]
-
-            xl:h-[300px]
-          "
-        >
+      <div className="relative flex w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl flex-col overflow-hidden bg-white shadow-2xl max-h-[88vh] sm:max-h-[85vh] rounded-t-3xl sm:rounded-3xl border border-slate-200/80 animate-in slide-in-from-bottom-6 duration-300">
+        {/* ================= HEADER IMAGE CONTAINER ================= */}
+        <div className="relative w-full shrink-0 overflow-hidden bg-slate-900 h-40 sm:h-52 md:h-60">
           <img
-            src={entity.photo}
+            src={currentPhoto}
             alt={entity.name}
-            className="
-              h-full
-              w-full
-              object-cover
-            "
-            onError={(event) => {
-              (event.target as HTMLImageElement).src = isPotential
-                ? "/images/potentials/tanaman-hias.jpg"
-                : "/images/facilities/kantor-lurah.jpg";
-            }}
+            className="h-full w-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"
+            onError={() => setImgError(true)}
           />
-
-          <div
-            className="
-              absolute inset-0
-              bg-gradient-to-t
-              from-slate-950/90
-              via-slate-950/35
-              to-slate-950/5
-            "
-          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent" />
 
           {/* CLOSE BUTTON */}
-
           <button
-            id="btn-close-detail"
             onClick={onClose}
-            className="
-              absolute
-              right-3
-              top-3
-
-              sm:right-4
-              sm:top-4
-
-              flex
-              h-10
-              w-10
-              items-center
-              justify-center
-
-              rounded-full
-              bg-slate-950/70
-              text-white
-              shadow-lg
-              backdrop-blur-md
-
-              transition-all
-              hover:bg-slate-950
-              hover:scale-105
-              active:scale-95
-
-              focus:outline-none
-              focus:ring-2
-              focus:ring-white/80
-            "
+            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-slate-950/70 text-white shadow-md backdrop-blur-md transition-all hover:bg-slate-950 hover:scale-105 active:scale-95 cursor-pointer"
             aria-label="Tutup detail"
           >
-            <X className="h-5 w-5" />
+            <X className="h-4 w-4" />
           </button>
 
-          {/* BADGES */}
-
-          <div
-            className="
-              absolute
-              bottom-3
-              left-3
-              right-3
-
-              flex
-              flex-wrap
-              items-center
-              gap-1.5
-
-              sm:bottom-4
-              sm:left-5
-              sm:right-5
-              sm:gap-2
-            "
-          >
+          {/* BADGES OVERLAY */}
+          <div className="absolute bottom-2.5 left-3.5 right-3.5 flex flex-wrap items-center gap-1.5 sm:bottom-4 sm:left-6 sm:right-6">
             <span
-              className="
-                max-w-full
-                truncate
-
-                rounded-lg
-                px-2.5
-                py-1
-
-                text-[10px]
-                font-bold
-                uppercase
-                tracking-wide
-                shadow-sm
-
-                sm:px-3
-                sm:text-xs
-              "
-              style={{
-                backgroundColor: badgeBg,
-                color: badgeText,
-                borderColor: badgeColor,
-              }}
+              className="rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm"
+              style={{ backgroundColor: badgeColor }}
             >
               {category?.name || entity.category}
             </span>
 
             {entity.rw_name && (
-              <span
-                className="
-                  rounded-lg
-                  bg-white/90
-                  px-2.5
-                  py-1
-
-                  text-[10px]
-                  font-semibold
-                  text-slate-900
-
-                  backdrop-blur-sm
-
-                  sm:text-xs
-                "
-              >
+              <span className="rounded-md bg-white/90 px-2 py-0.5 text-[10px] font-semibold text-slate-900 backdrop-blur-sm shadow-sm">
                 {entity.rw_name}
               </span>
             )}
 
-            <span
-              className="
-                flex
-                items-center
-                gap-1
-
-                rounded-lg
-                bg-[#633B83]
-                px-2.5
-                py-1
-
-                text-[10px]
-                font-semibold
-                text-white
-                shadow-sm
-
-                sm:text-xs
-              "
-            >
+            <span className="flex items-center gap-1 rounded-md bg-[#633B83] px-2 py-0.5 text-[10px] font-semibold text-white shadow-sm">
               {isPotential ? (
                 <>
                   <Sparkles className="h-3 w-3 shrink-0 text-[#FCCB5D]" />
-
-                  <span className="whitespace-nowrap">Potensi Unggulan</span>
+                  <span>Potensi</span>
                 </>
               ) : (
                 <>
                   <Building2 className="h-3 w-3 shrink-0 text-[#FCCB5D]" />
-
-                  <span className="whitespace-nowrap">Fasilitas Publik</span>
+                  <span>Fasilitas</span>
                 </>
               )}
             </span>
           </div>
         </div>
 
-        {/* ================= SCROLLABLE CONTENT ================= */}
-
-        <div
-          className="
-            min-h-0
-            flex-1
-            overflow-y-auto
-
-            px-4
-            py-5
-
-            sm:px-6
-            sm:py-6
-
-            lg:px-8
-            lg:py-7
-          "
-        >
-          <div
-            className="
-              mx-auto
-              w-full
-              max-w-4xl
-              space-y-5
-
-              sm:space-y-6
-            "
-          >
-            {/* TITLE */}
-
-            <div>
-              <div
-                className="
-                  mb-1.5
-                  flex
-                  flex-wrap
-                  items-center
-                  gap-x-2
-                  gap-y-1
-
-                  text-[10px]
-                  font-semibold
-                  text-slate-400
-
-                  sm:text-xs
-                "
-              >
-                <span className="font-mono">ID: {entity.id}</span>
-
-                <span className="hidden sm:inline">•</span>
-
-                <span>Kelurahan Balai Gadang</span>
-              </div>
-
-              <h2
-                id="entity-detail-title"
-                className="
-                  break-words
-                  text-xl
-                  font-extrabold
-                  leading-snug
-                  text-slate-900
-
-                  sm:text-2xl
-
-                  md:text-3xl
-                "
-              >
-                {entity.name}
-              </h2>
+        {/* ================= SCROLLABLE BODY ================= */}
+        <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5 custom-scrollbar space-y-4">
+          {/* TITLE & ID */}
+          <div>
+            <div className="mb-0.5 flex items-center gap-2 text-[10px] font-mono font-semibold text-slate-400">
+              <span>ID: {entity.id}</span>
+              <span>•</span>
+              <span>Kelurahan Balai Gadang</span>
             </div>
+            <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              {entity.name}
+            </h2>
+          </div>
 
-            {/* EXTRA INFO */}
+          {/* EXTRA INFO / PRODUK UNGGULAN */}
+          {entity.extraInfo && (
+            <div className="flex items-start gap-2.5 rounded-xl border border-[#FCA228]/30 bg-[#FCA228]/10 p-3">
+              <Tag className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#FCA228]" />
+              <div className="min-w-0">
+                <span className="mb-0.5 block text-[11px] font-bold text-[#633B83]">
+                  Keunggulan / Produk Utama
+                </span>
+                <p className="text-xs leading-relaxed text-slate-800 font-medium">
+                  {entity.extraInfo}
+                </p>
+              </div>
+            </div>
+          )}
 
-            {entity.extraInfo && (
-              <div
-                className="
-                  flex
-                  items-start
-                  gap-3
+          {/* DESCRIPTION */}
+          <div className="space-y-1">
+            <h3 className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+              Deskripsi Lengkap
+            </h3>
+            <p className="text-xs sm:text-sm leading-relaxed text-slate-600 whitespace-pre-line">
+              {entity.description ||
+                "Belum ada deskripsi mendetail untuk lokasi ini."}
+            </p>
+          </div>
 
-                  rounded-xl
-                  border
-                  border-[#FCA228]/30
-                  bg-[#FCA228]/10
+          {/* META INFORMATION GRID */}
+          <div className="space-y-2">
+            <h3 className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+              Informasi Kontak & Lokasi
+            </h3>
 
-                  p-3.5
-
-                  sm:p-4
-                "
-              >
-                <Tag
-                  className="
-                    mt-0.5
-                    h-4
-                    w-4
-                    shrink-0
-                    text-[#FCA228]
-                  "
-                />
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              {/* Address */}
+              <div className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-3 flex items-start gap-2.5">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#7E549E]/10 text-[#7E549E]">
+                  <MapPin className="h-3.5 w-3.5" />
+                </div>
                 <div className="min-w-0">
-                  <span
-                    className="
-                      mb-0.5
-                      block
-                      text-xs
-                      font-bold
-                      text-[#633B83]
-                    "
-                  >
-                    Keunggulan / Produk
+                  <span className="block text-[11px] font-bold text-slate-800 mb-0.5">
+                    Alamat
                   </span>
-
-                  <p
-                    className="
-                      break-words
-                      text-xs
-                      leading-relaxed
-                      text-[#633B83]
-
-                      sm:text-sm
-                    "
-                  >
-                    {entity.extraInfo}
-                  </p>
+                  <span className="block text-xs text-slate-600 leading-relaxed">
+                    {entity.address || "Alamat belum tersedia"}
+                  </span>
                 </div>
               </div>
-            )}
 
-            {/* DESCRIPTION */}
-
-            <section>
-              <h3
-                className="
-                  mb-2
-                  text-[10px]
-                  font-bold
-                  uppercase
-                  tracking-wider
-                  text-slate-400
-
-                  sm:text-xs
-                "
-              >
-                Deskripsi Lengkap
-              </h3>
-
-              <p
-                className="
-                  whitespace-pre-line
-                  break-words
-
-                  text-sm
-                  leading-7
-                  text-slate-700
-
-                  sm:text-base
-                  sm:leading-7
-                "
-              >
-                {entity.description || "Belum ada deskripsi untuk lokasi ini."}
-              </p>
-            </section>
-
-            {/* META INFORMATION */}
-
-            <section>
-              <h3
-                className="
-                  mb-3
-                  text-[10px]
-                  font-bold
-                  uppercase
-                  tracking-wider
-                  text-slate-400
-
-                  sm:text-xs
-                "
-              >
-                Informasi Lokasi
-              </h3>
-
-              <div
-                className="
-                  grid
-                  grid-cols-1
-                  gap-3
-
-                  sm:grid-cols-2
-
-                  lg:gap-4
-                "
-              >
-                {/* ADDRESS */}
-
-                <div
-                  className="
-                    rounded-xl
-                    border
-                    border-slate-200
-                    bg-slate-50
-
-                    p-3.5
-
-                    sm:p-4
-                  "
-                >
-                  <div className="flex items-start gap-3">
-                    <div
-                      className="
-                        flex
-                        h-8
-                        w-8
-                        shrink-0
-                        items-center
-                        justify-center
-                        rounded-lg
-                        bg-[#7E549E]/10
-                      "
+              {/* Coordinates */}
+              <div className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-3 flex items-start gap-2.5">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#7E549E]/10 text-[#7E549E]">
+                  <Navigation className="h-3.5 w-3.5" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <span className="block text-[11px] font-bold text-slate-800 mb-0.5">
+                    Koordinat Spasial
+                  </span>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-mono text-[10px] text-slate-600 truncate">
+                      {entity.latitude.toFixed(5)},{" "}
+                      {entity.longitude.toFixed(5)}
+                    </span>
+                    <button
+                      onClick={handleCopyCoords}
+                      className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-slate-200 bg-white text-slate-600 hover:text-[#633B83] transition-colors cursor-pointer"
+                      title="Salin Koordinat"
                     >
-                      <MapPin className="h-4 w-4 text-[#7E549E]" />
-                    </div>
-
-                    <div className="min-w-0">
-                      <span
-                        className="
-                          mb-1
-                          block
-                          text-xs
-                          font-bold
-                          text-slate-800
-                        "
-                      >
-                        Alamat Lokasi
-                      </span>
-
-                      <span
-                        className="
-                          block
-                          break-words
-                          text-xs
-                          leading-relaxed
-                          text-slate-600
-
-                          sm:text-sm
-                        "
-                      >
-                        {entity.address || "Alamat belum tersedia"}
-                      </span>
-                    </div>
+                      {copiedCoords ? (
+                        <Check className="h-3 w-3 text-[#633B83]" />
+                      ) : (
+                        <Copy className="h-3 w-3" />
+                      )}
+                    </button>
                   </div>
                 </div>
-
-                {/* COORDINATES */}
-
-                <div
-                  className="
-                    rounded-xl
-                    border
-                    border-slate-200
-                    bg-slate-50
-
-                    p-3.5
-
-                    sm:p-4
-                  "
-                >
-                  <div className="flex items-start gap-3">
-                    <div
-                      className="
-                        flex
-                        h-8
-                        w-8
-                        shrink-0
-                        items-center
-                        justify-center
-                        rounded-lg
-                        bg-[#7E549E]/10
-                      "
-                    >
-                      <Navigation className="h-4 w-4 text-[#7E549E]" />
-                    </div>
-
-                    <div className="min-w-0 flex-1">
-                      <span
-                        className="
-                          mb-1
-                          block
-                          text-xs
-                          font-bold
-                          text-slate-800
-                        "
-                      >
-                        Koordinat Spasial
-                      </span>
-
-                      <div className="flex items-center justify-between gap-2">
-                        <span
-                          className="
-                            min-w-0
-                            break-all
-                            font-mono
-                            text-[11px]
-                            text-slate-600
-
-                            sm:text-xs
-                          "
-                        >
-                          {entity.latitude.toFixed(6)},{" "}
-                          {entity.longitude.toFixed(6)}
-                        </span>
-
-                        <button
-                          onClick={handleCopyCoords}
-                          className="
-                            flex
-                            h-8
-                            w-8
-                            shrink-0
-                            items-center
-                            justify-center
-
-                            rounded-lg
-                            border
-                            border-slate-200
-                            bg-white
-                            text-slate-600
-
-                            transition-all
-                            hover:bg-slate-100
-                            hover:text-[#633B83]
-                            active:scale-95
-
-                            focus:outline-none
-                            focus:ring-2
-                            focus:ring-[#7E549E]/30
-                          "
-                          title="Salin koordinat"
-                          aria-label="Salin koordinat"
-                        >
-                          {copiedCoords ? (
-                            <Check className="h-4 w-4 text-[#633B83]" />
-                          ) : (
-                            <Copy className="h-4 w-4" />
-                          )}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* OPERATIONAL HOURS */}
-
-                {entity.operationalHours && (
-                  <div
-                    className="
-                      rounded-xl
-                      border
-                      border-slate-200
-                      bg-slate-50
-
-                      p-3.5
-
-                      sm:p-4
-                    "
-                  >
-                    <div className="flex items-start gap-3">
-                      <div
-                        className="
-                          flex
-                          h-8
-                          w-8
-                          shrink-0
-                          items-center
-                          justify-center
-                          rounded-lg
-                          bg-[#7E549E]/10
-                        "
-                      >
-                        <Clock className="h-4 w-4 text-[#7E549E]" />
-                      </div>
-
-                      <div className="min-w-0">
-                        <span
-                          className="
-                            mb-1
-                            block
-                            text-xs
-                            font-bold
-                            text-slate-800
-                          "
-                        >
-                          Jam Operasional
-                        </span>
-
-                        <span
-                          className="
-                            block
-                            break-words
-                            text-xs
-                            leading-relaxed
-                            text-slate-600
-
-                            sm:text-sm
-                          "
-                        >
-                          {entity.operationalHours}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* CONTACT */}
-
-                {entity.contact && (
-                  <div
-                    className="
-                      rounded-xl
-                      border
-                      border-slate-200
-                      bg-slate-50
-
-                      p-3.5
-
-                      sm:p-4
-                    "
-                  >
-                    <div className="flex items-start gap-3">
-                      <div
-                        className="
-                          flex
-                          h-8
-                          w-8
-                          shrink-0
-                          items-center
-                          justify-center
-                          rounded-lg
-                          bg-[#FCA228]/15
-                        "
-                      >
-                        <Phone className="h-4 w-4 text-[#FCA228]" />
-                      </div>
-
-                      <div className="min-w-0">
-                        <span
-                          className="
-                            mb-1
-                            block
-                            text-xs
-                            font-bold
-                            text-slate-800
-                          "
-                        >
-                          Kontak / Pengelola
-                        </span>
-
-                        <span
-                          className="
-                            block
-                            break-all
-                            text-xs
-                            leading-relaxed
-                            text-slate-600
-
-                            sm:text-sm
-                          "
-                        >
-                          {entity.contact}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
-            </section>
+
+              {/* Operational Hours */}
+              {entity.operationalHours && (
+                <div className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-3 flex items-start gap-2.5">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#7E549E]/10 text-[#7E549E]">
+                    <Clock className="h-3.5 w-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <span className="block text-[11px] font-bold text-slate-800 mb-0.5">
+                      Jam Operasional
+                    </span>
+                    <span className="block text-xs text-slate-600 leading-relaxed">
+                      {entity.operationalHours}
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* Contact Person */}
+              {entity.contact && (
+                <div className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-3 flex items-start gap-2.5">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#FCA228]/15 text-[#FCA228]">
+                    <Phone className="h-3.5 w-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <span className="block text-[11px] font-bold text-slate-800 mb-0.5">
+                      Kontak / Pengelola
+                    </span>
+                    <span className="block text-xs text-slate-600 leading-relaxed break-all">
+                      {entity.contact}
+                    </span>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* ================= FOOTER ACTION ================= */}
-
-        <div
-          className="
-            shrink-0
-            border-t
-            border-slate-200
-            bg-white/95
-            p-3
-            backdrop-blur-md
-
-            sm:p-4
-
-            lg:px-6
-          "
-        >
-          <div
-            className="
-              mx-auto
-              flex
-              w-full
-              max-w-4xl
-              flex-col
-              gap-2
-
-              sm:flex-row
-              sm:items-center
-              sm:gap-2.5
-            "
+        {/* ================= FOOTER ACTIONS ================= */}
+        <div className="shrink-0 border-t border-slate-200/80 bg-white p-3 flex flex-col sm:flex-row items-center gap-2">
+          <button
+            onClick={() => {
+              onClose();
+              onFocusOnMap(entity);
+            }}
+            className="flex w-full sm:flex-1 items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-[#633B83] to-[#7E549E] px-3.5 py-2.5 text-xs font-bold text-white shadow-sm hover:from-[#7E549E] hover:to-[#633B83] transition-all cursor-pointer"
           >
-            {/* FOCUS MAP */}
+            <MapPin className="h-3.5 w-3.5 text-[#FCCB5D]" />
+            <span>Fokus di Peta</span>
+          </button>
 
-            <button
-              onClick={() => onFocusOnMap(entity)}
-              className="
-                flex
-                min-h-11
-                w-full
-                items-center
-                justify-center
-                gap-2
+          <a
+            href={googleMapsDirectionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-full sm:flex-1 items-center justify-center gap-1.5 rounded-xl bg-slate-900 px-3.5 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-slate-800 transition-all cursor-pointer"
+          >
+            <Navigation className="h-3.5 w-3.5 text-[#FCCB5D]" />
+            <span>Navigasi Maps</span>
+            <ExternalLink className="h-3 w-3 text-slate-400" />
+          </a>
 
-                rounded-xl
-
-                bg-gradient-to-r
-                from-[#633B83]
-                to-[#7E549E]
-
-                px-4
-                py-3
-
-                text-xs
-                font-semibold
-                text-white
-                shadow-sm
-
-                transition-all
-
-                hover:from-[#7E549E]
-                hover:to-[#633B83]
-
-                active:scale-[0.98]
-
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#7E549E]/40
-
-                sm:flex-1
-                sm:text-sm
-              "
-            >
-              <MapPin className="h-4 w-4 text-[#FCCB5D]" />
-
-              <span>Lihat di Peta</span>
-            </button>
-
-            {/* GOOGLE MAPS */}
-
-            <a
-              href={googleMapsDirectionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                flex
-                min-h-11
-                w-full
-                items-center
-                justify-center
-                gap-2
-
-                rounded-xl
-                bg-slate-900
-
-                px-4
-                py-3
-
-                text-xs
-                font-semibold
-                text-white
-                shadow-sm
-
-                transition-all
-
-                hover:bg-slate-800
-                active:scale-[0.98]
-
-                focus:outline-none
-                focus:ring-2
-                focus:ring-slate-400/40
-
-                sm:flex-1
-                sm:text-sm
-              "
-            >
-              <Navigation className="h-4 w-4 text-[#FCCB5D]" />
-
-              <span>Buka Navigasi</span>
-
-              <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
-            </a>
-
-            {/* SHARE */}
-
-            <button
-              onClick={handleShareLink}
-              className={`
-                flex
-                min-h-11
-                w-full
-                items-center
-                justify-center
-                gap-2
-
-                rounded-xl
-                border
-
-                px-4
-                py-3
-
-                text-xs
-                font-semibold
-
-                transition-all
-                active:scale-[0.98]
-
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#7E549E]/30
-
-                sm:w-auto
-                sm:min-w-[110px]
-                sm:text-sm
-
-                ${
-                  copiedLink
-                    ? `
-                      border-[#8F66AC]/50
-                      bg-[#7E549E]/10
-                      text-[#633B83]
-                    `
-                    : `
-                      border-slate-200
-                      bg-white
-                      text-slate-700
-                      shadow-sm
-                      hover:bg-slate-100
-                    `
-                }
-              `}
-              title="Bagikan tautan lokasi"
-            >
-              {copiedLink ? (
-                <>
-                  <Check className="h-4 w-4" />
-
-                  <span>Tersalin!</span>
-                </>
-              ) : (
-                <>
-                  <Share2 className="h-4 w-4" />
-
-                  <span>Bagikan</span>
-                </>
-              )}
-            </button>
-          </div>
+          <button
+            onClick={handleShareLink}
+            className={`flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-xl border px-3.5 py-2.5 text-xs font-bold transition-all cursor-pointer ${
+              copiedLink
+                ? "border-[#8F66AC]/50 bg-[#7E549E]/10 text-[#633B83]"
+                : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50 shadow-sm"
+            }`}
+          >
+            {copiedLink ? (
+              <>
+                <Check className="h-3.5 w-3.5" />
+                <span>Tersalin!</span>
+              </>
+            ) : (
+              <>
+                <Share2 className="h-3.5 w-3.5" />
+                <span>Bagikan</span>
+              </>
+            )}
+          </button>
         </div>
       </div>
+
+      <style>{`
+        .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+      `}</style>
     </div>
   );
 };

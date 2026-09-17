@@ -5,11 +5,11 @@ import {
   Building2,
   Search,
   RotateCcw,
-  ChevronLeft,
-  ChevronRight,
-  X,
   SlidersHorizontal,
   MapPin,
+  X,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 interface FacilitySectionProps {
@@ -35,10 +35,23 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedRw, setSelectedRw] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const itemsPerPage = 4;
+  // Deteksi ukuran layar untuk menentukan jumlah item per halaman secara dinamis
+  // Mobile: 4 item (2 baris x 2 kolom)
+  // Desktop: 6 item (2 baris x 3 kolom)
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
 
-  // Optimasi filter menggunakan useMemo agar tidak di-recompute secara berlebihan
+  const itemsPerPage = isMobile ? 4 : 6;
+
+  // Optimasi filter menggunakan useMemo
   const filteredFacilities = useMemo(() => {
     const term = searchTerm.toLowerCase().trim();
     return facilities.filter((fac) => {
@@ -74,6 +87,7 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
   const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
   const validPage = Math.min(Math.max(1, currentPage), totalPages);
   const startIndex = (validPage - 1) * itemsPerPage;
+
   const paginatedFacilities = useMemo(() => {
     return filteredFacilities.slice(startIndex, startIndex + itemsPerPage);
   }, [filteredFacilities, startIndex, itemsPerPage]);
@@ -86,7 +100,7 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
     }
   };
 
-  // Logika pembentukan array tombol halaman yang aman dan rapi
+  // Logika Smart Pagination
   const getPageNumbers = () => {
     const pages: (number | string)[] = [];
     if (totalPages <= 5) {
@@ -111,136 +125,163 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
   return (
     <section
       id="fasilitas"
-      className="scroll-mt-12 sm:scroll-mt-8 py-6 sm:py-10 bg-slate-50/60 backdrop-blur-xs border-b border-slate-200/80"
+      className="relative lg:min-h-screen w-full flex flex-col justify-center bg-[#0B0F19] text-white overflow-hidden py-14 lg:py-16 border-b border-white/5"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Compact */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-4">
-          <div className="max-w-2xl">
-            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Fasilitas Publik ({facilities.length})
-            </h2>
-            <p className="mt-0.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Daftar sarana pemerintahan, kesehatan, pendidikan, ibadah, dan
-              infrastruktur umum di Balai Gadang.
-            </p>
-          </div>
-        </div>
+      {/* Background Accent Glows */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[20%] -left-[10%] w-[400px] h-[400px] rounded-full bg-[#633B83]/15 blur-[120px]" />
+        <div className="absolute bottom-[20%] -right-[10%] w-[400px] h-[400px] rounded-full bg-[#FCA228]/10 blur-[100px]" />
+      </div>
 
-        {/* Filter Bar */}
-        <div className="bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-xl p-2 sm:p-2.5 mb-4 shadow-xs">
-          <div className="flex flex-col md:flex-row items-stretch md:items-center gap-2">
-            {/* Search Input */}
-            <div className="relative flex-1">
-              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-              <input
-                type="text"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Cari fasilitas atau alamat..."
-                aria-label="Cari fasilitas atau alamat"
-                className="w-full pl-8 pr-7 py-1.5 h-9 bg-white border border-slate-200 rounded-lg text-xs placeholder-slate-400 focus:outline-none focus:border-[#7E549E] focus:ring-2 focus:ring-[#633B83]/15 transition-all"
-              />
-              {searchTerm && (
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:32px_32px]" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 w-full flex flex-col z-10">
+        {/* ==========================================
+            HEADER & FILTER BAR
+            ========================================== */}
+        <div className="flex flex-col gap-3.5 mb-4 lg:mb-5 flex-shrink-0">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-3">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                Fasilitas Publik{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FCA228] to-[#FCCB5D]">
+                  ({facilities.length})
+                </span>
+              </h2>
+              <p className="mt-1 text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xl">
+                Daftar sarana pemerintahan, kesehatan, pendidikan, ibadah, dan
+                infrastruktur umum di Kelurahan Balai Gadang.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl p-2.5 shadow-sm">
+            <div className="flex flex-col md:flex-row items-stretch md:items-center gap-2.5">
+              <div className="relative flex-1">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  placeholder="Cari fasilitas atau alamat..."
+                  aria-label="Cari fasilitas atau alamat"
+                  className="w-full pl-10 pr-9 py-2 bg-white/[0.05] border border-white/10 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#FCA228]/60 transition-all"
+                />
+                {searchTerm && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchTerm("")}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-0.5 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+
+              <div className="grid grid-cols-2 md:flex items-center gap-2 md:w-auto">
+                <div className="relative md:w-44">
+                  <select
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    aria-label="Filter berdasarkan Kategori"
+                    className="w-full pl-3 pr-7 py-2 bg-white/[0.05] border border-white/10 rounded-xl text-xs text-slate-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#FCA228]/60 transition-all appearance-none cursor-pointer truncate"
+                  >
+                    <option value="" className="bg-slate-900 text-white">
+                      Semua Kategori
+                    </option>
+                    {categories.map((cat) => (
+                      <option
+                        key={cat.id}
+                        value={cat.id}
+                        className="bg-slate-900 text-white"
+                      >
+                        {cat.name}
+                      </option>
+                    ))}
+                  </select>
+                  <SlidersHorizontal className="w-3.5 h-3.5 text-slate-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                </div>
+
+                <div className="relative md:w-44">
+                  <select
+                    value={selectedRw}
+                    onChange={(e) => setSelectedRw(e.target.value)}
+                    aria-label="Filter berdasarkan Wilayah RW"
+                    className="w-full pl-3 pr-7 py-2 bg-white/[0.05] border border-white/10 rounded-xl text-xs text-slate-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#FCA228]/60 transition-all appearance-none cursor-pointer truncate"
+                  >
+                    <option value="" className="bg-slate-900 text-white">
+                      Semua Wilayah ({rws.length} RW)
+                    </option>
+                    {rws.map((rw) => (
+                      <option
+                        key={rw.rw_id}
+                        value={rw.rw_id}
+                        className="bg-slate-900 text-white"
+                      >
+                        {rw.rw_id} — {rw.name}
+                      </option>
+                    ))}
+                  </select>
+                  <MapPin className="w-3.5 h-3.5 text-slate-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                </div>
+              </div>
+
+              {isFiltered && (
                 <button
                   type="button"
-                  onClick={() => setSearchTerm("")}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5 rounded-full hover:bg-slate-100 transition-colors cursor-pointer"
-                  aria-label="Hapus kata kunci pencarian"
+                  onClick={handleReset}
+                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-slate-200 text-xs font-semibold transition-colors cursor-pointer whitespace-nowrap"
                 >
-                  <X className="w-3.5 h-3.5" />
+                  <RotateCcw className="w-3.5 h-3.5 text-slate-400" />
+                  <span>Reset</span>
                 </button>
               )}
             </div>
-
-            {/* Select Controls Container */}
-            <div className="grid grid-cols-2 md:flex items-center gap-2 md:w-auto">
-              <div className="relative md:w-44">
-                <select
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  aria-label="Filter berdasarkan Kategori"
-                  className="w-full pl-2.5 pr-7 py-1.5 h-9 bg-white border border-slate-200 rounded-lg text-xs text-slate-700 font-medium focus:outline-none focus:border-[#7E549E] focus:ring-2 focus:ring-[#633B83]/15 transition-all appearance-none cursor-pointer truncate"
-                >
-                  <option value="">Semua Kategori</option>
-                  {categories.map((cat) => (
-                    <option key={cat.id} value={cat.id}>
-                      {cat.name}
-                    </option>
-                  ))}
-                </select>
-                <SlidersHorizontal className="w-3 h-3 text-slate-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-              </div>
-
-              <div className="relative md:w-44">
-                <select
-                  value={selectedRw}
-                  onChange={(e) => setSelectedRw(e.target.value)}
-                  aria-label="Filter berdasarkan Wilayah RW"
-                  className="w-full pl-2.5 pr-7 py-1.5 h-9 bg-white border border-slate-200 rounded-lg text-xs text-slate-700 font-medium focus:outline-none focus:border-[#7E549E] focus:ring-2 focus:ring-[#633B83]/15 transition-all appearance-none cursor-pointer truncate"
-                >
-                  <option value="">Semua Wilayah ({rws.length} RW)</option>
-                  {rws.map((rw) => (
-                    <option key={rw.rw_id} value={rw.rw_id}>
-                      {rw.rw_id} — {rw.name}
-                    </option>
-                  ))}
-                </select>
-                <MapPin className="w-3 h-3 text-slate-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-              </div>
-            </div>
-
-            {isFiltered && (
-              <button
-                type="button"
-                onClick={handleReset}
-                className="inline-flex items-center justify-center gap-1 px-3 h-9 rounded-lg bg-slate-200/60 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors cursor-pointer whitespace-nowrap"
-                title="Reset Semua Filter"
-              >
-                <RotateCcw className="w-3.5 h-3.5 text-slate-600" />
-                <span className="hidden sm:inline">Reset</span>
-              </button>
-            )}
           </div>
         </div>
 
-        {/* Results Grid */}
+        {/* ==========================================
+            MAIN CONTENT - Grid Responsif (grid-cols-2 di Mobile, lg:grid-cols-3 di Desktop)
+            ========================================== */}
         {totalItems > 0 ? (
-          <div className="space-y-4">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 items-stretch">
+          <div className="flex flex-col gap-3.5">
+            {/* Grid Kartu: 2 Kolom di Mobile (4 card), 3 Kolom di Desktop (6 card) */}
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4 items-stretch">
               {paginatedFacilities.map((facility) => (
-                <FacilityCard
+                <div
                   key={facility.facility_id}
-                  facility={facility}
-                  category={categoryMap.get(facility.category)}
-                  rw={rwMap.get(facility.rw_id)}
-                  onSelect={onSelectFacility}
-                  onFocusMap={onFocusMap}
-                />
+                  className="flex flex-col h-full w-full [&>*]:h-full [&>*]:flex [&>*]:flex-col [&>*]:justify-between"
+                >
+                  <FacilityCard
+                    facility={facility}
+                    category={categoryMap.get(facility.category)}
+                    rw={rwMap.get(facility.rw_id)}
+                    onSelect={onSelectFacility}
+                    onFocusMap={onFocusMap}
+                  />
+                </div>
               ))}
             </div>
 
-            {/* Pagination Bar */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-2 p-2 px-3 bg-white border border-slate-200/80 rounded-xl shadow-xs">
-              <div className="text-[11px] sm:text-xs text-slate-500 font-medium text-center sm:text-left">
+            {/* Pagination Bar Bawah (Dengan Smart Ellipsis) */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-2.5 sm:p-3 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur-md flex-shrink-0">
+              <div className="text-[11px] sm:text-xs text-slate-400 font-medium text-center sm:text-left">
                 Menampilkan{" "}
-                <span className="font-bold text-slate-800">
-                  {startIndex + 1}-
+                <strong className="text-white">
+                  {startIndex + 1} -{" "}
                   {Math.min(startIndex + itemsPerPage, totalItems)}
-                </span>{" "}
-                dari{" "}
-                <span className="font-bold text-slate-800">{totalItems}</span>{" "}
+                </strong>{" "}
+                dari <strong className="text-white">{totalItems}</strong>{" "}
                 fasilitas
               </div>
 
               {totalPages > 1 && (
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1.5">
                   <button
                     type="button"
                     onClick={() => handlePageChange(validPage - 1)}
                     disabled={validPage <= 1}
-                    className="p-1 px-2 rounded-lg border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold flex items-center gap-0.5 cursor-pointer"
-                    aria-label="Halaman Sebelumnya"
+                    className="px-2.5 py-1.5 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-xs font-semibold flex items-center gap-1 cursor-pointer"
                   >
                     <ChevronLeft className="w-3.5 h-3.5" />
                     <span className="hidden sm:inline">Sebelumnya</span>
@@ -252,7 +293,7 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
                         return (
                           <span
                             key={`ellipsis-${idx}`}
-                            className="px-0.5 text-slate-400 text-[10px]"
+                            className="px-1 text-slate-500 text-xs"
                           >
                             ...
                           </span>
@@ -265,10 +306,10 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
                           key={`page-${item}`}
                           type="button"
                           onClick={() => handlePageChange(item)}
-                          className={`w-7 h-7 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                          className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                             isActive
-                              ? "bg-gradient-to-r from-[#633B83] to-[#7E549E] text-white shadow-xs"
-                              : "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50"
+                              ? "bg-gradient-to-r from-[#FCA228] to-[#FCB739] text-slate-950 shadow-sm"
+                              : "bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10"
                           }`}
                         >
                           {item}
@@ -281,8 +322,7 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
                     type="button"
                     onClick={() => handlePageChange(validPage + 1)}
                     disabled={validPage >= totalPages}
-                    className="p-1 px-2 rounded-lg border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold flex items-center gap-0.5 cursor-pointer"
-                    aria-label="Halaman Selanjutnya"
+                    className="px-2.5 py-1.5 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-xs font-semibold flex items-center gap-1 cursor-pointer"
                   >
                     <span className="hidden sm:inline">Selanjutnya</span>
                     <ChevronRight className="w-3.5 h-3.5" />
@@ -292,25 +332,23 @@ export const FacilitySection: React.FC<FacilitySectionProps> = ({
             </div>
           </div>
         ) : (
-          /* Empty State */
-          <div className="bg-white border border-slate-200 rounded-2xl p-8 sm:p-12 text-center max-w-md mx-auto shadow-xs">
-            <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mx-auto mb-3">
-              <Building2 className="w-6 h-6 text-slate-400" />
+          <div className="flex items-center justify-center py-16">
+            <div className="bg-white/[0.02] backdrop-blur-md border border-white/5 rounded-2xl p-8 text-center max-w-sm w-full shadow-xl">
+              <Building2 className="w-8 h-8 text-slate-600 mx-auto mb-3" />
+              <h3 className="text-base font-bold text-white mb-1">
+                Tidak Ada Fasilitas
+              </h3>
+              <p className="text-xs text-slate-400 mb-5">
+                Tidak ditemukan data yang sesuai dengan filter.
+              </p>
+              <button
+                type="button"
+                onClick={handleReset}
+                className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#FCA228] to-[#FCB739] text-slate-950 text-xs font-extrabold inline-flex items-center gap-1.5 cursor-pointer"
+              >
+                <RotateCcw className="w-3.5 h-3.5" /> Reset Filter
+              </button>
             </div>
-            <h3 className="text-sm sm:text-base font-bold text-slate-800">
-              Tidak ada fasilitas yang sesuai
-            </h3>
-            <p className="text-xs text-slate-500 mt-1 max-w-xs mx-auto">
-              Silakan sesuaikan kata kunci pencarian, kategori, atau filter RW
-              Anda.
-            </p>
-            <button
-              type="button"
-              onClick={handleReset}
-              className="mt-4 px-4 py-2 rounded-xl bg-gradient-to-r from-[#633B83] to-[#7E549E] text-white text-xs font-semibold hover:from-[#7E549E] hover:to-[#633B83] transition-colors cursor-pointer"
-            >
-              Tampilkan Semua Fasilitas
-            </button>
           </div>
         )}
       </div>
