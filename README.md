@@ -65,8 +65,6 @@ Website ini dibangun menggunakan stack frontend modern yang mengutamakan perform
 
 ---
 
-
-
 ## 📊 Manajemen Data
 
 Seluruh data fasilitas, potensi, dan informasi wilayah disimpan dalam format standar terbuka (`.csv` dan `.json`) pada direktori `public/data/`. Anda dapat memperbarui data tanpa perlu mengutak-atik kode logika aplikasi:
